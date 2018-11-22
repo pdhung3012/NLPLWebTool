@@ -1,0 +1,1 @@
+label.username= Usernamelabel.password= Passwordlabel.login= Loginerror.login= Invalid Username/Password. Please try again.
