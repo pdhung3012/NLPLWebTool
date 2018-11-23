@@ -177,7 +177,7 @@
  	
   %>
   <div>
-  You can upload your own project (need to be maven and zipped) or upload the AnyCode data project <a href="/NLPLWebTool/data/SampleAnyCodeCorpus.zip">here</a>. 
+  You can upload your own project (need to be maven and zipped) or upload the AnyCode data project <a href="/NLPLWebTool/data/AnyCodeCorpus.zip">here</a>. 
   <br/>
   	By the translation phase, each natural language comments which have prefix &ldquo;&frasl;&frasl; NLPL:&rdquo; will be translated to code in each Java source files.
   </div>
