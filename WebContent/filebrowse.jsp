@@ -7,7 +7,7 @@
 	if(!strId.isEmpty() && !strId.equals("uploadFailed")){
 		
 		String filePath = getServletContext().getInitParameter("file-upload");
-		String inputPrefix=filePath+strId+File.separator+"input"+File.separator;
+		String inputPrefix=filePath+strId+"/"+"input"+"/";
 		
 		File fInput=new File(inputPrefix);
 		File[] arrInFolder=fInput.listFiles();
@@ -24,10 +24,10 @@
 			}
 			if(fInProjectName!=null){
 				String strProjectName=fInProjectName.getName();
-				File fTextInput=new File(inputPrefix+strProjectName+File.separator);
+				File fTextInput=new File(inputPrefix+strProjectName+"/");
 				// strTreeContent=fTextInput.getAbsolutePath();
 				if(fTextInput.isDirectory()){
-					strTreeContent=HtmlGenerator.getFolderHtml(inputPrefix+strProjectName+File.separator, inputPrefix, 0);
+					strTreeContent=HtmlGenerator.getFolderHtml(inputPrefix+strProjectName+"/", inputPrefix, 0);
 				}
 				
 				

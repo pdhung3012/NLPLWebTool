@@ -60,7 +60,7 @@ public class UploadServlet extends HttpServlet {
 		}
 
 		String uniqueId=UniqueIDGenerator.getUniqueID();
-		String uploadedFilePath=filePath+File.separator+uniqueId+File.separator;
+		String uploadedFilePath=filePath+"/"+uniqueId+"/";
 		File folderUpdloaded=new File(uploadedFilePath);
 		if(!folderUpdloaded.isDirectory()){
 			folderUpdloaded.mkdir();
@@ -122,8 +122,8 @@ public class UploadServlet extends HttpServlet {
 							boolean gotIt=false;
 							while(true){
 								try{
-									String inputFolder=strConstUploadedFilePath+"input"+File.separator;
-									String outputFolder=strConstUploadedFilePath+"output"+File.separator;
+									String inputFolder=strConstUploadedFilePath+"input"+"/";
+									String outputFolder=strConstUploadedFilePath+"output"+"/";
 									File fIn=new File(inputFolder);
 									if(!fIn.isDirectory()){
 										fIn.mkdir();
@@ -146,8 +146,8 @@ public class UploadServlet extends HttpServlet {
 									
 									if(fFinalInProjectName!=null){
 										
-										File fOutProject=new File(fOut.getAbsolutePath()+File.separator+fFinalInProjectName.getName()+File.separator);
-//										System.out.println(fOut.getAbsolutePath()+File.separator+fInProjectName.getName()+File.separator+"sss");
+										File fOutProject=new File(fOut.getAbsolutePath()+"/"+fFinalInProjectName.getName()+"/");
+//										System.out.println(fOut.getAbsolutePath()+"/"+fInProjectName.getName()+"/"+"sss");
 										if(!fOutProject.isDirectory()){
 											fOutProject.mkdir();
 										}

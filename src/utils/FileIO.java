@@ -1,10 +1,6 @@
 package utils;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileWriter;
+import java.io.*;
 import java.util.ArrayList;
 
 public class FileIO {
@@ -47,11 +43,30 @@ public class FileIO {
 			if(!new File(inputFile).exists()){
 				return "";
 			}
+			/*BufferedInputStream in = new BufferedInputStream(new FileInputStream(inputFile));
+			byte[] bytes = new byte[(int) new File(inputFile).length()];
+			in.read(bytes);
+			in.close();
+			return new String(bytes);
+			*/
+			if(!new File(inputFile).exists()){
+				return "";
+			}
+			/*
 			BufferedInputStream in = new BufferedInputStream(new FileInputStream(inputFile));
 			byte[] bytes = new byte[(int) new File(inputFile).length()];
 			in.read(bytes);
 			in.close();
 			return new String(bytes);
+			*/
+			BufferedReader in = new BufferedReader(new FileReader(inputFile));
+			StringBuilder sbResult=new StringBuilder();
+			String s=null;
+			while( (s = in.readLine()) != null) {
+					
+				sbResult.append(new String(s.getBytes(),"UTF-8")+"\n");
+			}
+			return sbResult.toString();
 		}
 		catch (Exception e) {
 			e.printStackTrace();

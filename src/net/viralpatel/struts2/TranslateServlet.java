@@ -25,8 +25,8 @@ import utils.ZipUtil;
  * Servlet implementation class TranslateServlet
  */
 public class TranslateServlet extends HttpServlet {
-	public static String filePath = "";
-	public static String configTranslationFilePath = "";
+	public String filePath = "";
+	public String configTranslationFilePath = "";
 	private ExecutorService pool = null;
 	
 	private static final long serialVersionUID = 1L;
@@ -43,7 +43,7 @@ public class TranslateServlet extends HttpServlet {
 		// Get the file location where it would be stored.
 		filePath = getServletContext().getInitParameter("file-upload");
 		configTranslationFilePath=getServletContext().getInitParameter("translation-config");
-		pool = Executors.newFixedThreadPool(8);
+		pool = Executors.newFixedThreadPool(4);
 	}
     
 	/**
@@ -61,36 +61,49 @@ public class TranslateServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		// Check that we have a file upload request
-		response.setContentType("text/html");
+		// response.setContentType("text/html");
 		// java.io.PrintWriter out = response.getWriter();
 
 		String projectId=request.getParameter("hiddenProjectId");
 		String projectName=request.getParameter("hiddenProjectName");
 		System.out.println("ID "+projectId+" name "+projectName);
-		final String strConstUploadedFilePath=filePath+projectId+File.separator;
+		final String strConstUploadedFilePath=filePath+projectId+"/";
 		final String strFinalProjectName=projectName;
-		final String inputFolder=strConstUploadedFilePath+"input"+File.separator+strFinalProjectName+File.separator;
-		final String outputFolder=strConstUploadedFilePath+"output"+File.separator+strFinalProjectName+File.separator;
-		final String resultFinalFile=strConstUploadedFilePath+File.separator+"result.txt";
+		final String resultFinalFile=strConstUploadedFilePath+"/"+"result.txt";
 		final String configFinalFile=configTranslationFilePath;
-		try{
-			
-			System.out.println("input folder"+inputFolder);
-			System.out.println("output folder"+outputFolder);
-			System.out.println("config"+configTranslationFilePath);
-			String[] args={
-			configFinalFile ,
-			inputFolder ,
-			outputFolder,
-			resultFinalFile
-			};
-			NLPLRunProject.main(args);
-			
-		}catch(Exception ex){
-			ex.printStackTrace();
-		}
 		
+		
+		
+		Thread t=new Thread(new Runnable() {
+			@Override
+			public void run() {
+				boolean gotIt=false;
+				try{
+					String inputFolder=strConstUploadedFilePath+"input"+"/"+strFinalProjectName+"/";
+					String outputFolder=strConstUploadedFilePath+"output"+"/"+strFinalProjectName+"/";
+					
+					System.out.println("input folder"+inputFolder);
+					System.out.println("output folder"+outputFolder);
+					System.out.println("config"+configTranslationFilePath);
+					String[] args={
+					configFinalFile ,
+					inputFolder ,
+					outputFolder,
+					resultFinalFile
+					};
+					NLPLRunProject.main(args);
+					
+				}catch(Exception ex){
+					ex.printStackTrace();
+				}
+			}
+		});
+		t.start();
+		//pool.shutdown();
 		response.sendRedirect("/NLPLWebTool//tool.jsp?request=viewProject&id="+projectId+"&message=translated");
+		
+		
+		
 	}
 
 }

@@ -57,7 +57,7 @@
  			
  			String strProjectName=request.getParameter("projectName");
  			if(strProjectName==null || strProjectName.isEmpty()){
- 				String strFileInput=filePath+strId+File.separator+"input"+File.separator;
+ 				String strFileInput=filePath+strId+"/"+"input"+"/";
  				File fInput=new File(strFileInput);
  				File[] arrInFolder=fInput.listFiles();
  				File fInProjectName=null;
@@ -77,21 +77,22 @@
  			
 			
 			if(!strProjectName.isEmpty()){
-				String strLocalZipOutput=filePath+File.separator+strId+File.separator+"output"+File.separator+strProjectName+".zip";
+				String strLocalZipOutput=filePath+"/"+strId+"/"+"output"+"/"+strProjectName+".zip";
 				File fLocalZipOutput=new File(strLocalZipOutput);
 				if(fLocalZipOutput.isFile()){
-					strZipOutput=serverUrl+strId+File.separator+"output"+strProjectName+".zip";
+					strZipOutput=serverUrl+strId+"/"+"output"+strProjectName+".zip";
 				}
-				//String strLocalZipOutput=filePath+File.separator+strId+File.separator+"output"+strProjectName+".zip";
+				//String strLocalZipOutput=filePath+"/"+strId+"/"+"output"+strProjectName+".zip";
 				
 			}
 			
  			if(strPageRequested==null) strPageRequested="";
+ 			else strPageRequested=EncodeDecodeUtil.decode(strPageRequested);
  			if(strPageRequested!="" && strPageRequested.endsWith(".java")){
  				
  				if(!strProjectName.isEmpty()){
-					String inputPrefix=filePath+File.separator+strId+File.separator+"input"+File.separator;
-					String outputPrefix=filePath+File.separator+strId+File.separator+"output"+File.separator;
+					String inputPrefix=filePath+"/"+strId+"/"+"input"+"/";
+					String outputPrefix=filePath+"/"+strId+"/"+"output"+"/";
 					String fpInput=inputPrefix+strPageRequested;
 					String fpOutput=outputPrefix+strPageRequested;
 					File fTextInput=new File(fpInput);
@@ -106,6 +107,7 @@
 				}
  				
  			}
+ 			String strEncodeRequest=EncodeDecodeUtil.encode(strPageRequested);
  	%>
  	
  <form action="TranslateServlet" method="POST">
@@ -123,7 +125,7 @@
  	%>
  </form>
  <br/>
- <label id="lblCurrentFileView" style="color:red">Current view file: <%=strPageRequested %></label>
+ <label id="lblCurrentFileView" style="color:red">Current view file: <%=strEncodeRequest%></label>
  	<script type="text/javascript">
 	function openCity(evt, cityName) {
 	    // Declare all variables
