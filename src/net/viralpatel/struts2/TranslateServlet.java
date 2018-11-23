@@ -43,6 +43,12 @@ public class TranslateServlet extends HttpServlet {
 		pool = Executors.newFixedThreadPool(4);
 	}
     
+    public void destroy(){
+    	if(pool!=null){
+    		pool.shutdown();
+    	}
+    }
+    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -71,7 +77,7 @@ public class TranslateServlet extends HttpServlet {
 		
 		
 		
-		Thread t=new Thread(new Runnable() {
+		pool.execute(new Runnable() {
 			@Override
 			public void run() {
 				boolean gotIt=false;
@@ -95,9 +101,9 @@ public class TranslateServlet extends HttpServlet {
 				}
 			}
 		});
-		t.start();
+		
 		//pool.shutdown();
-		response.sendRedirect("/NLPLWebTool//tool.jsp?request=viewProject&id="+projectId+"&message=translated");
+		response.sendRedirect("/NLPLWebTool/tool.jsp?request=viewProject&id="+projectId+"&message=translated");
 		
 		
 		
