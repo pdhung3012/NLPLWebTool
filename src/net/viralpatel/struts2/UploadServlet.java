@@ -42,8 +42,14 @@ public class UploadServlet extends HttpServlet {
 		// Get the file location where it would be stored.
 		filePath = getServletContext().getInitParameter("file-upload");
 		configTranslationFilePath=getServletContext().getInitParameter("translation-config");
-		pool = Executors.newFixedThreadPool(8);
+		pool = Executors.newFixedThreadPool(4);
 	}
+	
+	 public void destroy(){
+	    	if(pool!=null){
+	    		pool.shutdown();
+	    	}
+	    }
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, java.io.IOException {
