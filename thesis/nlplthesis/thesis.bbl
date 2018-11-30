@@ -1,0 +1,16 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Gvero and
+  Kuncak}{2015}]{Gvero:2015:SJE:2814270.2814295}
+Gvero, T. and Kuncak, V. (2015).
+\newblock Synthesizing java expressions from free-form queries.
+\newblock In {\em Proceedings of the 2015 ACM SIGPLAN International Conference
+  on Object-Oriented Programming, Systems, Languages, and Applications}, OOPSLA
+  2015, pages 416--432, New York, NY, USA. ACM.
+
+\bibitem[\protect\astroncite{Knuth}{1984}]{Knuth:1984:LP:473.479}
+Knuth, D.~E. (1984).
+\newblock Literate programming.
+\newblock {\em Comput. J.}, 27(2):97--111.
+
+\end{thebibliography}

@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis.aux
+The style file: apa.bst
+A level-1 auxiliary file: Preface/titlepage.aux
+A level-1 auxiliary file: Preface/dedication.aux
+A level-1 auxiliary file: Preface/acknowl.aux
+A level-1 auxiliary file: Preface/abstract.aux
+A level-1 auxiliary file: Body/chapter1.aux
+A level-1 auxiliary file: Body/chapter2.aux
+A level-1 auxiliary file: Body/chapter3.aux
+A level-1 auxiliary file: Body/chapter4.aux
+A level-1 auxiliary file: Body/chapter5.aux
+A level-1 auxiliary file: Reference/biblio.aux
+Illegal, another \bibstyle command---line 6 of file Reference/biblio.aux
+ : \bibstyle
+ :          {ieeetr}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Appendix/appendix1.aux
+A level-1 auxiliary file: Appendix/appendix2.aux
+Database file #1: Reference/references.bib
+You've used 2 entries,
+            1940 wiz_defined-function locations,
+            505 strings with 4384 characters,
+and the built_in function-call counts, 917 in all, are:
+= -- 98
+> -- 20
+< -- 3
++ -- 6
+- -- 6
+* -- 72
+:= -- 147
+add.period$ -- 7
+call.type$ -- 2
+change.case$ -- 13
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 41
+empty$ -- 72
+format.name$ -- 10
+if$ -- 192
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 6
+pop$ -- 9
+preamble$ -- 1
+purify$ -- 13
+quote$ -- 0
+skip$ -- 35
+stack$ -- 0
+substring$ -- 78
+swap$ -- 13
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 0
+while$ -- 9
+width$ -- 0
+write$ -- 31
+(There was 1 error message)

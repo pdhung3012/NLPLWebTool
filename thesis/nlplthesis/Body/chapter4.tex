@@ -1,0 +1,244 @@
+% Chapter 4 from the standard thesis template
+%   that contains an adv. example table and figure.
+ \addtocontents{toc}{\protect\newpage}
+\chapter{EXPERIMENTAL}
+In this section, I want to answer on the research question: How well NLPL performs for translating from Natural Language comments to code.  
+\section{Data Preparation}
+
+\section{Result}
+
+\begin{table}[]
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		\textbf{K} & \textbf{AnyCode} & \textbf{NLPL} & \textbf{Top-K of AnyCode} & \textbf{Top-K of NLPL} \\ \hline
+		1              & 32               & 39            & 61.54\%                   & 75.00\%                \\ \hline
+		2              & 39               & 40            & 75.00\%                   & 76.92\%                \\ \hline
+		3              & 41               & 41            & 78.85\%                   & 78.85\%                \\ \hline
+		4              & 42               & 42            & 80.77\%                   & 80.77\%                \\ \hline
+		5              & 45               & 42            & 86.54\%                   & 80.77\%                \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{longtable}{|p{.10\textwidth}|p{.35\textwidth}|p{.40\textwidth}|p{.15\textwidth}|}
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{No}} & \multicolumn{1}{c|}{\textbf{Natural Language Comment}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\textbf{NLPL Top-1 result}}                                          & \multicolumn{1}{c|}{\textbf{Top-K Acc}} \\ \hline
+		&                                                        & \multicolumn{1}{c|}{\cellcolor[HTML]{9AFF99}\textbf{Expected result}}                                            &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		1                                 & copy file fname to destination                         & FileUtils .copyFile( new File( fname ) ,new File( destination ) )                                                & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & FileUtils .copyFile(new File(fname), new File(destination))                                                      &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		2                                 & load class "MyClass.class"                             & Thread .currentThread() .getContextClassLoader() .loadClass( "MyClass .class" )                                  & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Thread .currentThread() .getContextClassLoader() .loadClass(”MyClass .class”)                                    &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		3                                 & make file ”text.txt”                                   & new LineNumberReader(new InputStreamReader( new File( "text .txt" ) )) .ready()                                  & 4                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new File(”text .txt”) .createNewFile()                                                                           &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		4                                 & write "hello" to file "text.txt"                       & FileUtils .writeStringToFile( new File( "text .txt" ) , "hello" )                                                & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & FileUtils .writeStringToFile(new File(”text .txt”), ”hello”)                                                     &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		5                                 & new buffered reader ”text.txt”                         & new BufferedReader(new InputStreamReader( "text .txt" ))                                                         & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new BufferedReader(new InputStreamReader("text .txt"))                                                           &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		6                                 & open connection ”http://www.oracle.com/”               & new URL( "http://www .oracle .com/" ) .openConnection()                                                          & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new URL(”http://www .oracle .com/”) .openConnection()                                                            &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		7                                 & create socket ”http://www.oracle.com/” 80              & new Socket( "http://www .oracle .com/" , 80 )                                                                    & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new Socket(”http://www .oracle .com/”, 80)                                                                       &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		8                                 & put a pair ”Mike” , ”+41-345-89-23” into a map         & new HashMap() .put( "Mike" , "+41-345-89-23" )                                                                   & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new HashMap() .put(”Mike”, ”+41-345-89-23”)                                                                      &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		9                                 & set thread max priority                                & Thread .currentThread() .setPriority(Thread .MAX\_PRIORITY )                                                     & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Thread .currentThread() .setPriority(Thread .MAX\_PRIORITY);                                                     &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		10                                & set property ”gate.home” to value ”http://gate.ac.uk/” & new Properties() .setProperty( "gate .home" , "http://gate .ac .uk/" )                                           & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new Properties() .setProperty(”gate .home”, ”http://gate .ac .uk/”)                                              &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		11                                & does the file 'text.txt' exist                         & new File( "text .txt" )  .exists()                                                                               & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new File("text .txt") .exists( )                                                                                 &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		12                                & get thread id                                          & Thread .currentThread() .getId()                                                                                 & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Thread .getCurrentThread() .getId()                                                                              &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		13                                & join thread                                            & Thread .currentThread() .join()                                                                                  & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Thread .getCurrentThread() .join()                                                                               &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		14                                & delete file ”text.txt”                                 & FileDeleteStrategy .NORMAL .delete(new File( "text .txt" ) )                                                     & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new File(”text .txt”) .delete()                                                                                  &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		15                                & print exception ex stack trace                         & ex  .printStackTrace()                                                                                           & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & ex .printStackTrace()                                                                                            &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		16                                & is ”text.txt” directory                                & new File( "text .txt" ) .isDirectory()                                                                           & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new File(”text .txt”) .isDirectory()                                                                             &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		17                                & get thread stack trace                                 & Thread .currentThread() .getStackTrace()                                                                         & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Thread .currentThread() .getStackTrace()                                                                         &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		18                                & read line by line file ”text.txt”                      & new LineNumberReader(new InputStreamReader( new File( "text .txt" ) )) .readLine()                               & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & FileUtils .readLines(new File(”text .txt”))                                                                      &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		19                                & set time zone to ”GMT”                                 & Calendar .getInstance() .setTimeZone(TimeZone .getTimeZone( "GMT" ) )                                            & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Calendar .getInstance() .setTimeZone(TimeZone .getTimeZone(”GMT”))                                               &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		20                                & free memory                                            & Runtime .getRuntime() .freeMemory()                                                                              & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Runtime .getRuntime() .freeMemory()                                                                              &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		21                                & total memory                                           & Runtime .getRuntime() .totalMemory()                                                                             & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Runtime .getRuntime() .totalMemory()                                                                             &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		22                                & new data input stream ”text.txt”                       & new DataInputStream(new FileInputStream( "text .txt" ))                                                          & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new DataInputStream(new FileInputStream(”text .txt”))                                                            &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		23                                & rename file ”text1.txt” to ”text2.txt”                 & new File( "text1 .txt" )  .renameTo(new File( "text2 .txt" ) )                                                   & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new File(”text1 .txt”) .renameTo(new File(”text2 .txt”))                                                         &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		24                                & move file ”text1.txt” to ”text2.txt”                   & FileUtils .moveFile( new File( "text1 .txt" ) ,new File( "text2 .txt" ) )                                        & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & FileUtils .moveFile(new File(”text1 .txt”), new File(”text2 .txt”))                                              &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		25                                & read utf from the file ”text.txt”                      & FileUtils .readFileToString(new File( "text .txt" ) )                                                            & 2                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new DataInputStream(new FileInputStream(”text .txt”)) .readUTF()                                                 &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		26                                & set thread min priority                                & Thread .currentThread() .setPriority(Thread .MIN\_PRIORITY )                                                     & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Thread .currentThread() .setPriority(Thread .MIN PRIORITY)                                                       &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		27                                & create panel and set layout to border                  & new Panel()  .setLayout(new BorderLayout() )                                                                     & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new Panel() .setLayout(new BorderLayout())                                                                       &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		28                                & sort array                                             & Arrays .sort( array )                                                                                            & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Arrays .sort(array)                                                                                              &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		29                                & add label ”Names:” to panel                            & new Panel() .add( new Label( "Names:" ) )                                                                        & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new Panel() .add(new Label(”Names:”))                                                                            &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		30                                & write 2015 to data output stream ”text.txt”            & new DataOutputStream(new FileOutputStream( "text .txt" ))  .writeInt( 2015 )                                     & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new DataOutputStream(new FileOutputStream(”text .txt”)) .write(2015)                                             &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		31                                & get date when file ”text.txt” was last time modified   & new File( "text .txt" )  .lastModified()                                                                         & \textgreater{}10                        \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new Date(new File(”text .txt”) .lastModified()) .getTime()                                                       &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		32                                & check file ”text.txt” ”read” permission                & AccessController .checkPermission(new FilePermission( "text .txt" , "read" ) )                                   & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & AccessController .checkPermission(new FilePermission(”text .txt”, ”read”))                                       &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		33                                & read lines with numbers from file ”text.txt”           & new LineNumberReader(new InputStreamReader( new File( "text .txt" ) )) .readLine()                               & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new LineNumberReader(new InputStreamReader(new FileInputStream(”text .txt”))) .readLine()                        &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		34                                & read from console                                      & new BufferedReader(new InputStreamReader( System .in )) .read()                                                  & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new BufferedReader(new InputStreamReader(System .in)) .readLine()                                                &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		35                                & is file ”text.txt” data available                      & new DataInputStream(new FileInputStream( new File( "text .txt" ) )) .available()                                 & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new DataInputStream(new FileInputStream(”text .txt”)) .available()                                               &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		36                                & get double value x                                     & Integer .valueOf( x ) .doubleValue()                                                                             & \textgreater{}10                        \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Double .valueOf(x) .doubleValue()                                                                                &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		37                                & write object o to file output stream ”data.obj"        & new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream( "data .obj" ))) .writeObject( o )          & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(”data .obj”))) .writeObject(o)              &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		38                                & create bit set and set its 5th element to true         & new BitSet()  .set( 5 , true )                                                                                   & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new BitSet() .set(5,true)                                                                                        &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		39                                & accept request on port 80                              & new ServerSocket( 80 ) .accept()                                                                                 & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new ServerSocket(80) .accept()                                                                                   &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		40                                & get thread group                                       & Thread .currentThread() .getThreadGroup()                                                                        & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Thread .currentThread() .getThreadGroup()                                                                        &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		41                                & create panel and set layout to grid                    & new Panel()  .setLayout(new GridLayout() )                                                                       & \textgreater{}10                        \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new Panel() .setLayout(new GridBagLayout())                                                                      &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		42                                & get screen size                                        & Toolkit .getDefaultToolkit() .getScreenSize()                                                                    & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Toolkit .getDefaultToolkit() .getScreenSize()                                                                    &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		43                                & get splash screen graphics                             & ? .getSplashScreen()                                                                                             & \textgreater{}10                        \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & SplashScreen .getSplashScreen() .createGraphics()                                                                &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		44                                & get display refresh rate                               & GraphicsEnvironment .getLocalGraphicsEnvironment() .getDefaultScreenDevice() .getDisplayMode() .getRefreshRate() & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & GraphicsEnvironment .getLocalGraphicsEnvironment() .getDefaultScreenDevice() .getDisplayMode() .getRefreshRate() &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		45                                & get keystroke modifiers                                & keystroke  .getModifiers()                                                                                       & 1                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & KeyEvent .getKeyModifiersText(keystroke .getModifiers())                                                         &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		46                                & generate ”RSA” private key                             & new Thread( "RSA" ) .yield()                                                                                     & \textgreater{}10                        \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & KeyPairGenerator .getInstance(”RSA”) .generateKeyPair() .getPrivate()                                            &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		47                                & reverse list                                           & Collections .reverseOrder()                                                                                      & \textgreater{}10                        \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & Collections .reverse(list)                                                                                       &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		48                                & intersection of rectangle 4 5 with rectangle 3 2       & ? .intersection(? )                                                                                              & \textgreater{}10                        \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new Rectangle(5, 4) .intersection(new Rectangle(3, 2))                                                           &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		49                                & set cursor over label to hand                          & new AffineTransform() .setToIdentity()                                                                           & \textgreater{}10                        \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & label .setCursor(Cursor .getPredefinedCursor(Cursor .HAND CURSOR))                                               &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		50                                & read big integer from console                          & new BufferedReader(new InputStreamReader( System .in )) .read()                                                  & 3                                       \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new Scanner(System .in) .nextBigInteger()                                                                        &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		51                                & delete file ”text.txt” when JVM terminates             & new File( "text .txt" )  .delete()                                                                               & \textgreater{}10                        \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & new File(”text .txt”) .deleteOnExit()                                                                            &                                         \\ \hline
+		\rowcolor[HTML]{FFCCC9} 
+		52                                & get date instance for Germany                          & DateFormat .getDateTimeInstance() .getDateInstance()                                                             & \textgreater{}10                        \\ \hline
+		\rowcolor[HTML]{9AFF99} 
+		&                                                        & DateFormat .getDateTimeInstance(DateFormat .MEDIUM,DateFormat .MEDIUM, Locale .GERMANY)                          &                                         \\ \hline
+		
+\end{longtable}
+
+\section{title}
+
+
+
+
