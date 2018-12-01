@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 NOV 2018 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 NOV 2018 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -474,12 +474,12 @@ CHAPTER\  1.
 
 
 
-] [2] [3]) [4]
+] [2] [3] [4] [5]) [6]
 \openout2 = `Body/chapter2.aux'.
 
  (./Body/chapter2.tex
 CHAPTER\  2.
-) [5
+) [7
 
 
 
@@ -488,7 +488,7 @@ CHAPTER\  2.
 
  (./Body/chapter3.tex
 CHAPTER\  3.
-) [6
+) [8
 
 
 
@@ -762,7 +762,7 @@ Overfull \hbox (49.99994pt too wide) in alignment at lines 64--104
  [] [] [] [] 
  []
 
-[7
+[9
 
 
 
@@ -891,7 +891,7 @@ Overfull \hbox (49.99994pt too wide) in alignment at lines 104--144
  [] [] [] [] 
  []
 
-[8]
+[10]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
@@ -1025,7 +1025,7 @@ Overfull \hbox (49.99994pt too wide) in alignment at lines 144--184
  [] [] [] [] 
  []
 
-[9] [10]
+[11] [12]
 Underfull \hbox (badness 1596) in paragraph at lines 186--186
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .get-Thread-
  []
@@ -1102,7 +1102,7 @@ Overfull \hbox (49.99994pt too wide) in alignment at lines 184--224
  [] [] [] [] 
  []
 
-[11]
+[13]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
@@ -1140,12 +1140,12 @@ Overfull \hbox (49.99994pt too wide) in alignment at lines 224--238
  [] [] [] [] 
  []
 
-[12] [13]) [14] [15] [16]
+[14] [15]) [16] [17] [18]
 \openout2 = `Body/chapter5.aux'.
 
  (./Body/chapter5.tex
 CHAPTER\  5.
-) [17
+) [19
 
 
 
@@ -1157,7 +1157,7 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 1--1
  []   [] 
  []
 
-)) [18
+)) [20
 
 
 
@@ -1166,7 +1166,7 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 1--1
 
  (./Appendix/appendix1.tex
 APPENDIX\  A.
-) [19
+) [21
 
 
 
@@ -1175,7 +1175,7 @@ APPENDIX\  A.
 
  (./Appendix/appendix2.tex
 APPENDIX\  B.
-) [20
+) [22
 
 
 
@@ -1190,12 +1190,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A5D48A898859373BBBF8025BBEBE139A;1287.
+(rerunfilecheck)             Checksum: 9716C6140D8D20DBBC7F9C80476312B5;1355.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 7257 strings out of 492995
- 103375 string characters out of 6132704
+ 7261 strings out of 492995
+ 103421 string characters out of 6132704
  260304 words of memory out of 5000000
  10581 multiletter control sequences out of 15000+600000
  7638 words of font info for 27 fonts, out of 8000000 for 9000
@@ -1207,10 +1207,10 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on thesis.pdf (28 pages, 125801 bytes).
+Output written on thesis.pdf (30 pages, 131781 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
