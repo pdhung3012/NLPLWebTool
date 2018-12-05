@@ -18,16 +18,19 @@
 \BOOKMARK [2][-]{subsection.25}{2.1.5 Context}{section.20}% 18
 \BOOKMARK [2][-]{subsection.26}{2.1.6 Ambiguity}{section.20}% 19
 \BOOKMARK [1][-]{section.27}{2.2 Elements of a Natural Language parser}{chapter.19}% 20
-\BOOKMARK [0][-]{chapter.28}{3. METHODS AND PROCEDURES}{}% 21
-\BOOKMARK [1][-]{section.29}{3.1 Overview of Natural Language Parser}{chapter.28}% 22
-\BOOKMARK [1][-]{section.30}{3.2 Solving Differences between Natural Language and Programming Language}{chapter.28}% 23
-\BOOKMARK [1][-]{section.31}{3.3 Rules for translating Natural Language elements}{chapter.28}% 24
-\BOOKMARK [0][-]{chapter.32}{4. EXPERIMENTAL}{}% 25
-\BOOKMARK [1][-]{section.33}{4.1 Data Preparation}{chapter.32}% 26
-\BOOKMARK [1][-]{section.34}{4.2 Experiment Result}{chapter.32}% 27
-\BOOKMARK [1][-]{section.36}{4.3 Result Analysis}{chapter.32}% 28
-\BOOKMARK [0][-]{chapter.37}{5. SUMMARY AND DISCUSSION}{}% 29
-\BOOKMARK [1][-]{section.38}{5.1 Related Works on Syntax-based approach in translation between Natural Languages}{chapter.37}% 30
-\BOOKMARK [1][-]{section.39}{5.2 Related Works on Inferring Implementation}{chapter.37}% 31
-\BOOKMARK [0][-]{appendix.41}{A. ADDITIONAL MATERIAL}{}% 32
-\BOOKMARK [0][-]{appendix.43}{B. STATISTICAL RESULTS}{}% 33
+\BOOKMARK [2][-]{subsection.28}{2.2.1 Clause level tags}{section.27}% 21
+\BOOKMARK [2][-]{subsection.29}{2.2.2 Phrase level tags}{section.27}% 22
+\BOOKMARK [2][-]{subsection.30}{2.2.3 Word level tags}{section.27}% 23
+\BOOKMARK [0][-]{chapter.31}{3. METHODS AND PROCEDURES}{}% 24
+\BOOKMARK [1][-]{section.32}{3.1 Overview of Natural Language Parser}{chapter.31}% 25
+\BOOKMARK [1][-]{section.33}{3.2 Solving Differences between Natural Language and Programming Language}{chapter.31}% 26
+\BOOKMARK [1][-]{section.34}{3.3 Rules for translating Natural Language elements}{chapter.31}% 27
+\BOOKMARK [0][-]{chapter.35}{4. EXPERIMENTAL}{}% 28
+\BOOKMARK [1][-]{section.36}{4.1 Data Preparation}{chapter.35}% 29
+\BOOKMARK [1][-]{section.37}{4.2 Experiment Result}{chapter.35}% 30
+\BOOKMARK [1][-]{section.39}{4.3 Result Analysis}{chapter.35}% 31
+\BOOKMARK [0][-]{chapter.40}{5. SUMMARY AND DISCUSSION}{}% 32
+\BOOKMARK [1][-]{section.41}{5.1 Related Works on Syntax-based approach in translation between Natural Languages}{chapter.40}% 33
+\BOOKMARK [1][-]{section.42}{5.2 Related Works on Inferring Implementation}{chapter.40}% 34
+\BOOKMARK [0][-]{appendix.44}{A. ADDITIONAL MATERIAL}{}% 35
+\BOOKMARK [0][-]{appendix.46}{B. STATISTICAL RESULTS}{}% 36
