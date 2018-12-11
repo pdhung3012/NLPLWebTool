@@ -1,10 +1,26 @@
 % Chapter 3 from the thesis template file
 %   that contains an example table and figure.
 \chapter{METHODS AND PROCEDURES}
-\section{Overview of Natural Language Parser}
+In the previous chapter, we discuss main problems of NL to PL translation and elements of NL Parser, which are different types of tags for building an NL parse tree representation for NL sentence. These knowledge help us for gaining background to design our syntax-based approach for NL to PL translation. while NLP researches relies on analyzing NL parsed tree, we also considered NL parsed tree for NL description as the core element for translation. To handle the syntax of NL parsed tree, we relied on how programming language handled an Abstract Syntax Tree (AST) which is a representation of a source code file by building ASTVisitor. Based on ideas of ASTVisitor in PL, we designed the NLPLVisitor for NL to PL translation.  
+\section{Designing a NLPL Visitor}
+\subsection{Visitor Pattern}
+In programming language design, collections are most important data types. A collection may have instances from multiple types. Since we usually use loop for handling information from collection, it is very common that we need to write an operation or method to handle each element of collection without knowing the type of each elements. There is one way to write an operation, which used "instanceof" condition to check the type of each elements in a collection, however this way is not reflecting object oriented design. 
+
+A pattern that allows handle element of different types inside a collection in object oriented way calls Visitor pattern. In a visitor pattern, developers have the ability for representing operations on each types of elements of a collection. Besides, it allows you to write new operation without interfering the previous operations you define for types of element. In other words, visitor pattern overcomes the conflict between object structure s and algorithm  which the the object structure operates on, means you can update the algorithm handling for each elements without changing the structure of element. Along with collections, visitor pattern is also available for other data type structures such as tree structure.
+
+One of the most useful data structure for handling source code is Abstract-Syntax- Tree (AST). In AST tree, each node in tree belong to a specific node type depend on the source code. An example of AST is shown on figure \cite{}. In this example, "println" is a method invocation node which contains elements as its child node like a String literal argument. Obviously, to handle content of AST, we need to have an visitor pattern for taking operation on each type of nodes. ASTVisitor, which is developed by eclipse JDT (\cite{})is an important implementation of visitor pattern for operating the AST tree.
+
+A design diagram of ASTVisitor is shown as follows. ASTVisitor is the name of the interface in package of eclipse JDT. It has several operation defined for each type of AST node, the most important operation is the visit() method declaration. There are set of method visit() in ASTVisitor, which each method take a specific type of ASTNode as type of its argument and each method will execute some algorithms based on type of ASTNode. To handle the operation on ASTNode on our own, we need to define a class that implements ASTVisitor and define content inside body of each visit operation. Our own visitor can be passed as an argument of ASTParser, which is used to produce the ASTNode for the whole source code and storing information of our visitor. A full class diagram of an ASTVisitor is shown on figure \cite{}.
+ 
+\subsection{NLPLVisitor}
+Inspiring from advantages of ASTVisitor in programming language, we use a visitor pattern for design a module for dealing with the complexity of Natural Language parsed tree in NL to PL translation. NL parsed tree, to be remind, is a data structure for representing NL description in the form of a tree in which each node belongs to a specific tags in a tag sets of Penn Tree bank we discussed in the previous chapter. Similar to handling AST tree in PL, we design and implement an abstract class NLPL Visitor which we defined the basic visit method declaration for all types of NL tags. Then, we defined implementation of each visit operation relates to each type by writing a class that implements the NLPL visitor. Since our work is for translating between two languages, we called this implemented class Translation Visitor. 
+
+Considering the translation can be done by a syntax based approach, we implement the content of each visit function as follows. First, we need to understand the intuition of each NL tags in the translation to PL. Next, we provide rules for each NL tags for translating to get  elements in PL. In this step, we considered the children of each NL node and its terminal (textual value) as the most important information to decide which rules will be used for the translation of the node. The intuition of each NL tags is provided based on our observations on the NL description corpus as documentation of Java Development Kit (JDK), and the summarization of them are shown in figure \cite{}. The implemented rules for each NL tags will be discussed in the next section.
+
 \section{Solving Differences between Natural Language and Programming Language}
-\section{Rules for translating Natural Language elements}
 
-
+\subsection{Rules for translating Natural Language elements}
+\subsection{Algorithms for solving Indirect Reference between Language}
+\subsection{NLPL Architecture Overview}
 
 

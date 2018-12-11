@@ -22,15 +22,19 @@
 \BOOKMARK [2][-]{subsection.29}{2.2.2 Phrase level tags}{section.27}% 22
 \BOOKMARK [2][-]{subsection.30}{2.2.3 Word level tags}{section.27}% 23
 \BOOKMARK [0][-]{chapter.31}{3. METHODS AND PROCEDURES}{}% 24
-\BOOKMARK [1][-]{section.32}{3.1 Overview of Natural Language Parser}{chapter.31}% 25
-\BOOKMARK [1][-]{section.33}{3.2 Solving Differences between Natural Language and Programming Language}{chapter.31}% 26
-\BOOKMARK [1][-]{section.34}{3.3 Rules for translating Natural Language elements}{chapter.31}% 27
-\BOOKMARK [0][-]{chapter.35}{4. EXPERIMENTAL}{}% 28
-\BOOKMARK [1][-]{section.36}{4.1 Data Preparation}{chapter.35}% 29
-\BOOKMARK [1][-]{section.37}{4.2 Experiment Result}{chapter.35}% 30
-\BOOKMARK [1][-]{section.39}{4.3 Result Analysis}{chapter.35}% 31
-\BOOKMARK [0][-]{chapter.40}{5. SUMMARY AND DISCUSSION}{}% 32
-\BOOKMARK [1][-]{section.41}{5.1 Related Works on Syntax-based approach in translation between Natural Languages}{chapter.40}% 33
-\BOOKMARK [1][-]{section.42}{5.2 Related Works on Inferring Implementation}{chapter.40}% 34
-\BOOKMARK [0][-]{appendix.44}{A. ADDITIONAL MATERIAL}{}% 35
-\BOOKMARK [0][-]{appendix.46}{B. STATISTICAL RESULTS}{}% 36
+\BOOKMARK [1][-]{section.32}{3.1 Designing a NLPL Visitor}{chapter.31}% 25
+\BOOKMARK [2][-]{subsection.33}{3.1.1 Visitor Pattern}{section.32}% 26
+\BOOKMARK [2][-]{subsection.34}{3.1.2 NLPLVisitor}{section.32}% 27
+\BOOKMARK [1][-]{section.35}{3.2 Solving Differences between Natural Language and Programming Language}{chapter.31}% 28
+\BOOKMARK [2][-]{subsection.36}{3.2.1 Rules for translating Natural Language elements}{section.35}% 29
+\BOOKMARK [2][-]{subsection.37}{3.2.2 Algorithms for solving Indirect Reference between Language}{section.35}% 30
+\BOOKMARK [0][-]{chapter.38}{4. EXPERIMENTAL}{}% 31
+\BOOKMARK [1][-]{section.39}{4.1 Data Preparation}{chapter.38}% 32
+\BOOKMARK [1][-]{section.40}{4.2 Experiment Result}{chapter.38}% 33
+\BOOKMARK [1][-]{section.42}{4.3 Result Analysis}{chapter.38}% 34
+\BOOKMARK [1][-]{section.43}{4.4 NLPL Online IDE}{chapter.38}% 35
+\BOOKMARK [0][-]{chapter.44}{5. SUMMARY AND DISCUSSION}{}% 36
+\BOOKMARK [1][-]{section.45}{5.1 Related Works on Syntax-based approach in translation between Natural Languages}{chapter.44}% 37
+\BOOKMARK [1][-]{section.46}{5.2 Related Works on Inferring Implementation}{chapter.44}% 38
+\BOOKMARK [0][-]{appendix.48}{A. ADDITIONAL MATERIAL}{}% 39
+\BOOKMARK [0][-]{appendix.50}{B. STATISTICAL RESULTS}{}% 40
