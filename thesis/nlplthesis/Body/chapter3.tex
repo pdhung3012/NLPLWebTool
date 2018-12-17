@@ -17,10 +17,21 @@ Inspiring from advantages of ASTVisitor in programming language, we use a visito
 
 Considering the translation can be done by a syntax based approach, we implement the content of each visit function as follows. First, we need to understand the intuition of each NL tags in the translation to PL. Next, we provide rules for each NL tags for translating to get  elements in PL. In this step, we considered the children of each NL node and its terminal (textual value) as the most important information to decide which rules will be used for the translation of the node. The intuition of each NL tags is provided based on our observations on the NL description corpus as documentation of Java Development Kit (JDK), and the summarization of them are shown in figure \cite{}. The implemented rules for each NL tags will be discussed in the next section.
 
-\section{Solving Differences between Natural Language and Programming Language}
+\section{Solving Problems between Natural Language and Programming Language}
+\subsection{Context: Extracting Information from Variable and Literal}
+Context of NL description is information that can be mentioned in it. We consider surrounding code of NL description in a source code file and al Java APIs that can be accessible by a Java project that contains the description are two resources for representing the context of source code. In NLPL, given input of java project, NLPL has a module for extracting all accessible APIs in this project. They are APIs from imported library and APIs defined in each source files. The algorithm for extracting all accessible APIs is shown in figure \cite{}. \\
+In NL side,an NL description usually mentions about information of variable and literal value along with class name. We consider ambiguous types of class name is one type of indirect reference and we handle that by a reasoning module in the next section. For variables, we get information of all accessible variables in a set of variable object extract by algorithm \cite{} and check in NL description if it mentioned about a variable or not. For literal, we check if NL description contains a literal value by regular expression. We define regular expressions for string value and numeric value to do the checking. \\
+One problems of NL parser is that it relied on probabilistic parsing, so it can be error-prone. By looking at examples of NL descriptions and see the results of NL parser manually, we identify that keeping variable and literal in original form caused parsing with not useful information. For example, in the code showed in figure \cite{}, we see that a string value "text.txt" broke into 3 parts in NL parser, while we should consider it as a single element for processing. Similarly, with example 2 on figure \cite{}, the variable "a" is parsed to be a node of verb, which is not correct. To overcome this problem which cause by non-useful tags and incorrect tags, we represented variables and literal as an unique alias by the last step of preprocessing step in algorithm \cite{}. An example of unique alias is shown in the example of algorithm.  
 
+\subsection{NL Tree Transformation}
+
+\subsection{Context for NL Description}
 \subsection{Rules for translating Natural Language elements}
-\subsection{Algorithms for solving Indirect Reference between Language}
+\subsection{Solving IR on Noun Phrase}
+\subsection{Solving IR on Verb Phrase as Statement Trigger}
+
+\subsection{Solving IR on Verb Phrase as Method Invocation}
+\subsection{Solving IR on Preposition as Method API}
 \subsection{NLPL Architecture Overview}
 
 

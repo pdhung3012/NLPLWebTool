@@ -35,20 +35,27 @@
 \contentsline {section}{\numberline {3.1}Designing a NLPL Visitor}{14}{section.32}
 \contentsline {subsection}{\numberline {3.1.1}Visitor Pattern}{14}{subsection.33}
 \contentsline {subsection}{\numberline {3.1.2}NLPLVisitor}{15}{subsection.34}
-\contentsline {section}{\numberline {3.2}Solving Differences between Natural Language and Programming Language}{16}{section.35}
-\contentsline {subsection}{\numberline {3.2.1}Rules for translating Natural Language elements}{16}{subsection.36}
-\contentsline {subsection}{\numberline {3.2.2}Algorithms for solving Indirect Reference between Language}{16}{subsection.37}
+\contentsline {section}{\numberline {3.2}Solving Problems between Natural Language and Programming Language}{16}{section.35}
+\contentsline {subsection}{\numberline {3.2.1}Context: Extracting Information from Variable and Literal}{16}{subsection.36}
+\contentsline {subsection}{\numberline {3.2.2}NL Tree Transformation}{17}{subsection.37}
+\contentsline {subsection}{\numberline {3.2.3}Context for NL Description}{17}{subsection.38}
+\contentsline {subsection}{\numberline {3.2.4}Rules for translating Natural Language elements}{17}{subsection.39}
+\contentsline {subsection}{\numberline {3.2.5}Solving IR on Noun Phrase}{17}{subsection.40}
+\contentsline {subsection}{\numberline {3.2.6}Solving IR on Verb Phrase as Statement Trigger}{17}{subsection.41}
+\contentsline {subsection}{\numberline {3.2.7}Solving IR on Verb Phrase as Method Invocation}{17}{subsection.42}
+\contentsline {subsection}{\numberline {3.2.8}Solving IR on Preposition as Method API}{17}{subsection.43}
+\contentsline {subsection}{\numberline {3.2.9}NLPL Architecture Overview}{17}{subsection.44}
 \newpage 
-\contentsline {chapter}{\numberline {4.}EXPERIMENTAL}{17}{chapter.38}
-\contentsline {section}{\numberline {4.1}Data Preparation}{17}{section.39}
-\contentsline {section}{\numberline {4.2}Experiment Result}{17}{section.40}
-\contentsline {section}{\numberline {4.3}Result Analysis}{25}{section.42}
-\contentsline {section}{\numberline {4.4}NLPL Online IDE}{25}{section.43}
-\contentsline {chapter}{\numberline {5.}SUMMARY AND DISCUSSION}{27}{chapter.44}
-\contentsline {section}{\numberline {5.1}Related Works on Syntax-based approach in translation between Natural Languages}{27}{section.45}
-\contentsline {section}{\numberline {5.2}Related Works on Inferring Implementation}{27}{section.46}
+\contentsline {chapter}{\numberline {4.}EXPERIMENTAL}{18}{chapter.45}
+\contentsline {section}{\numberline {4.1}Data Preparation}{18}{section.46}
+\contentsline {section}{\numberline {4.2}Experiment Result}{18}{section.47}
+\contentsline {section}{\numberline {4.3}Result Analysis}{26}{section.49}
+\contentsline {section}{\numberline {4.4}NLPL Online IDE}{26}{section.50}
+\contentsline {chapter}{\numberline {5.}SUMMARY AND DISCUSSION}{28}{chapter.51}
+\contentsline {section}{\numberline {5.1}Related Works on Syntax-based approach in translation between Natural Languages}{28}{section.52}
+\contentsline {section}{\numberline {5.2}Related Works on Inferring Implementation}{28}{section.53}
 \def \@chapapp {}
 \def \@chapapp {APPENDIX\ }
-\contentsline {chapter}{\numberline {A.}ADDITIONAL MATERIAL}{29}{appendix.48}
-\contentsline {chapter}{\numberline {B.}STATISTICAL RESULTS}{30}{appendix.50}
+\contentsline {chapter}{\numberline {A.}ADDITIONAL MATERIAL}{30}{appendix.55}
+\contentsline {chapter}{\numberline {B.}STATISTICAL RESULTS}{31}{appendix.57}
 \contentsfinish 
