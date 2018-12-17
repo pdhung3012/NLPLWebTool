@@ -30,18 +30,18 @@
 \BOOKMARK [2][-]{subsection.37}{3.2.2 NL Tree Transformation}{section.35}% 30
 \BOOKMARK [2][-]{subsection.38}{3.2.3 Phrase: Connecting information between each Phrase in translation}{section.35}% 31
 \BOOKMARK [2][-]{subsection.39}{3.2.4 Rules for translating Natural Language elements}{section.35}% 32
-\BOOKMARK [2][-]{subsection.40}{3.2.5 Solving IR on Noun Phrase}{section.35}% 33
-\BOOKMARK [2][-]{subsection.41}{3.2.6 Solving IR on Verb Phrase as Statement Trigger}{section.35}% 34
-\BOOKMARK [2][-]{subsection.42}{3.2.7 Solving IR on Verb Phrase as Method Invocation}{section.35}% 35
-\BOOKMARK [2][-]{subsection.43}{3.2.8 Solving IR on Preposition as Method API}{section.35}% 36
-\BOOKMARK [2][-]{subsection.44}{3.2.9 NLPL Architecture Overview}{section.35}% 37
-\BOOKMARK [0][-]{chapter.45}{4. EXPERIMENTAL}{}% 38
-\BOOKMARK [1][-]{section.46}{4.1 Data Preparation}{chapter.45}% 39
-\BOOKMARK [1][-]{section.47}{4.2 Experiment Result}{chapter.45}% 40
-\BOOKMARK [1][-]{section.49}{4.3 Result Analysis}{chapter.45}% 41
-\BOOKMARK [1][-]{section.50}{4.4 NLPL Online IDE}{chapter.45}% 42
-\BOOKMARK [0][-]{chapter.51}{5. SUMMARY AND DISCUSSION}{}% 43
-\BOOKMARK [1][-]{section.52}{5.1 Related Works on Syntax-based approach in translation between Natural Languages}{chapter.51}% 44
-\BOOKMARK [1][-]{section.53}{5.2 Related Works on Inferring Implementation}{chapter.51}% 45
-\BOOKMARK [0][-]{appendix.55}{A. ADDITIONAL MATERIAL}{}% 46
-\BOOKMARK [0][-]{appendix.57}{B. STATISTICAL RESULTS}{}% 47
+\BOOKMARK [2][-]{subsection.40}{3.2.5 Solving IR on Noun Phrase as class name}{section.35}% 33
+\BOOKMARK [2][-]{subsection.43}{3.2.6 Solving IR on Verb Phrase as Statement Trigger}{section.35}% 34
+\BOOKMARK [2][-]{subsection.44}{3.2.7 Solving IR on Verb Phrase as Method Invocation}{section.35}% 35
+\BOOKMARK [2][-]{subsection.45}{3.2.8 Solving IR on Preposition as Method API}{section.35}% 36
+\BOOKMARK [2][-]{subsection.46}{3.2.9 NLPL Architecture Overview}{section.35}% 37
+\BOOKMARK [0][-]{chapter.47}{4. EXPERIMENTAL}{}% 38
+\BOOKMARK [1][-]{section.48}{4.1 Data Preparation}{chapter.47}% 39
+\BOOKMARK [1][-]{section.49}{4.2 Experiment Result}{chapter.47}% 40
+\BOOKMARK [1][-]{section.51}{4.3 Result Analysis}{chapter.47}% 41
+\BOOKMARK [1][-]{section.52}{4.4 NLPL Online IDE}{chapter.47}% 42
+\BOOKMARK [0][-]{chapter.53}{5. SUMMARY AND DISCUSSION}{}% 43
+\BOOKMARK [1][-]{section.54}{5.1 Related Works on Syntax-based approach in translation between Natural Languages}{chapter.53}% 44
+\BOOKMARK [1][-]{section.55}{5.2 Related Works on Inferring Implementation}{chapter.53}% 45
+\BOOKMARK [0][-]{appendix.57}{A. ADDITIONAL MATERIAL}{}% 46
+\BOOKMARK [0][-]{appendix.59}{B. STATISTICAL RESULTS}{}% 47

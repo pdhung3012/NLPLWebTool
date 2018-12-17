@@ -28,14 +28,18 @@ The appearance of variable and literal inside NL description leads to our observ
 
 \subsection{Phrase: Connecting information between each Phrase in translation}
 We handle complexity in phrase level by the idea that we need to find a way to combine translation results of each phrases in NL description. We consider conjunction tags CC, such as "and" or "or" are two main elements that separate between each phrase in translation.  In NL description, we consider that both "and" and "or" are usually used between boolean literal for expressing logical operator. In addition, "and" is usually used for combining translated results of each single phrase. We handle the "and" and the "or" conjunctions by algorithm shown in figure \cite{}. \\
-
-An example of different usage of "and" conjunction is shown by 3 examples in figure \cite{}. In the first example, we have "and" appears between two  boolean expressions that are used for comparison. In this case, due to the translated result is boolean for each single phrase, then the final translated result of "and" will be "\&\&" operator. In the second example, we see that the translated result for the first single clause is a constructor and the type of the constructor is the type of receiver of method API in the second clause. In this case, the combineExpression() function will mix translated results of these two phrases into a single expression. The thrid example shows a different condition compared to example 2. In this case, the constructor in the first clause doesn't have the same type with neither receiver and arguments. In this case the combineExpression() function will return 2 expressions consecutively as the final translated result.  
+An example of different usage of "and" conjunction is shown by 3 examples in figure \cite{}. In the first example, we have "and" appears between two  boolean expressions that are used for comparison. In this case, due to the translated result is boolean for each single phrase, then the final translated result of "and" will be "\&\&" operator. In the second example, we see that the translated result for the first single clause is a constructor and the type of the constructor is the type of receiver of method API in the second clause. In this case, the combineExpression() function will mix translated results of these two phrases into a single expression. The thrid example shows a different condition compared to example 2. In this case, the constructor in the first clause doesn't have the same type with neither receiver and arguments. In this case the combineExpression() function will return 2 expressions consecutively as the final translated result.  \\
+In the first 3 sections, we propose algorithms for take advantages of context in NL to PL translation and reasoning on on complex phrases, which are two per six main problems of naturalistic programming (\cite{}). In next sections, we will introduce our solution for solving four remaining problems which relate to Indirect reference: deixis, expressiveness, anaphoric relation and ambiguity.
 \subsection{Rules for translating Natural Language elements}
-\subsection{Solving IR on Noun Phrase}
-\subsection{Solving IR on Verb Phrase as Statement Trigger}
+In the NLPLVisitor, we provide rules for handling each NL tags. The main idea is that we identify types of tags, what children tags it produce then provide rules and its terminal value. An overview of rules and function relate to each tags is shown in table \cite{}.
+\subsection{Solving IR on Noun Phrase as class name}
 
+\subsubsection{Identifying  class name as Noun Phrase}
+\subsubsection{Resolving types for  class name}
+\subsection{Solving IR on Verb Phrase as Statement Trigger}
 \subsection{Solving IR on Verb Phrase as Method Invocation}
 \subsection{Solving IR on Preposition as Method API}
+
 \subsection{NLPL Architecture Overview}
 
 
