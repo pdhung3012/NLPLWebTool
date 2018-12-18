@@ -1,5 +1,12 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\astroncite{Barone and
+  Sennrich}{2017}]{DBLP:journals/corr/BaroneS17}
+Barone, A. V.~M. and Sennrich, R. (2017).
+\newblock A parallel corpus of python functions and documentation strings for
+  automated code documentation and code generation.
+\newblock {\em CoRR}, abs/1707.02275.
+
 \bibitem[\protect\astroncite{Gvero and
   Kuncak}{2015}]{Gvero:2015:SJE:2814270.2814295}
 Gvero, T. and Kuncak, V. (2015).
@@ -8,9 +15,64 @@ Gvero, T. and Kuncak, V. (2015).
   on Object-Oriented Programming, Systems, Languages, and Applications}, OOPSLA
   2015, pages 416--432, New York, NY, USA. ACM.
 
+\bibitem[\protect\astroncite{Knuth}{2009}]{LPExample:XString}
+Knuth, D. (2009).
+\newblock Xstring file.
+\newblock \url{http://www.literateprogramming.com/string.w}.
+
 \bibitem[\protect\astroncite{Knuth}{1984}]{Knuth:1984:LP:473.479}
 Knuth, D.~E. (1984).
 \newblock Literate programming.
 \newblock {\em Comput. J.}, 27(2):97--111.
+
+\bibitem[\protect\astroncite{Luong et~al.}{2017}]{luong17}
+Luong, M., Brevdo, E., and Zhao, R. (2017).
+\newblock Neural machine translation (seq2seq) tutorial.
+\newblock {\em https://github.com/tensorflow/nmt}.
+
+\bibitem[\protect\astroncite{Nguyen
+  et~al.}{2013}]{Nguyen:2013:LSM:2491411.2494584}
+Nguyen, A.~T., Nguyen, T.~T., and Nguyen, T.~N. (2013).
+\newblock Lexical statistical machine translation for language migration.
+\newblock In {\em Proceedings of the 2013 9th Joint Meeting on Foundations of
+  Software Engineering}, ESEC/FSE 2013, pages 651--654, New York, NY, USA. ACM.
+
+\bibitem[\protect\astroncite{Phan}{2018}]{NLPLWebTool}
+Phan, H. (2018).
+\newblock Nlpl web tool.
+\newblock \url{http://209.124.64.139:8080/NLPLWebTool/}.
+
+\bibitem[\protect\astroncite{Phan et~al.}{2017}]{Phan:2017:SLI:3102962.3102971}
+Phan, H., Nguyen, H.~A., Nguyen, T.~N., and Rajan, H. (2017).
+\newblock Statistical learning for inference between implementations and
+  documentation.
+\newblock In {\em Proceedings of the 39th International Conference on Software
+  Engineering: New Ideas and Emerging Results Track}, ICSE-NIER '17, pages
+  27--30, Piscataway, NJ, USA. IEEE Press.
+
+\bibitem[\protect\astroncite{Pulido-Prieto and
+  Ju\'{a}rez-Mart\'{\i}nez}{2017}]{Pulido-Prieto:2017:SNP:3145473.3109481}
+Pulido-Prieto, O. and Ju\'{a}rez-Mart\'{\i}nez, U. (2017).
+\newblock A survey of naturalistic programming technologies.
+\newblock {\em ACM Comput. Surv.}, 50(5):70:1--70:35.
+
+\bibitem[\protect\astroncite{Socher et~al.}{2013}]{P13-1045}
+Socher, R., Bauer, J., Manning, C.~D., and Andrew~Y., N. (2013).
+\newblock Parsing with compositional vector grammars.
+\newblock In {\em Proceedings of the 51st Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pages 455--465.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\astroncite{StackExchange}{2010}]{LPArticle:MainStream1}
+StackExchange (2010).
+\newblock Why isn't literate programming mainstream?
+\newblock
+  \url{https://softwareengineering.stackexchange.com/questions/811/why-isnt-literate-programming-mainstream}.
+
+\bibitem[\protect\astroncite{Young et~al.}{2018}]{8416973}
+Young, T., Hazarika, D., Poria, S., and Cambria, E. (2018).
+\newblock Recent trends in deep learning based natural language processing
+  [review article].
+\newblock {\em IEEE Computational Intelligence Magazine}, 13(3):55--75.
 
 \end{thebibliography}

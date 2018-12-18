@@ -1,8 +1,32 @@
 % Template file for a standard thesis
 \documentclass[11pt]{isuthesis}
 \usepackage[pdftex]{graphicx}
+\usepackage{url}
 % Standard, old-style thesis
 \usepackage{isutraditional}   
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language=Java,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true
+}
+
 \chaptertitle
 % Old-style, thesis numbering down to subsubsection
 \alternate

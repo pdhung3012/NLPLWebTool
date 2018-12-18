@@ -5,43 +5,42 @@
 \BOOKMARK [0][-]{section*.8}{ABSTRACT}{}% 5
 \BOOKMARK [0][-]{chapter.9}{1. OVERVIEW}{}% 6
 \BOOKMARK [1][-]{section.10}{1.1 Literate Programming}{chapter.9}% 7
-\BOOKMARK [1][-]{section.11}{1.2 Challenges of realizing Literate Programming}{chapter.9}% 8
-\BOOKMARK [2][-]{subsection.12}{1.2.1 Manually writing documentation and implementation}{section.11}% 9
-\BOOKMARK [2][-]{subsection.13}{1.2.2 Automatically inferring implementation by Machine Translation }{section.11}% 10
-\BOOKMARK [1][-]{section.18}{1.3 Direction of a syntax-based approach for Natural Language to Programming Language translation}{chapter.9}% 11
-\BOOKMARK [0][-]{chapter.19}{2. REVIEW OF LITERATURE}{}% 12
-\BOOKMARK [1][-]{section.20}{2.1 Differences between Natural Language and Programming Language}{chapter.19}% 13
-\BOOKMARK [2][-]{subsection.21}{2.1.1 Deixis}{section.20}% 14
-\BOOKMARK [2][-]{subsection.22}{2.1.2 Expressiveness}{section.20}% 15
-\BOOKMARK [2][-]{subsection.23}{2.1.3 Phrases}{section.20}% 16
-\BOOKMARK [2][-]{subsection.24}{2.1.4 Anaphoric Relations}{section.20}% 17
-\BOOKMARK [2][-]{subsection.25}{2.1.5 Context}{section.20}% 18
-\BOOKMARK [2][-]{subsection.26}{2.1.6 Ambiguity}{section.20}% 19
-\BOOKMARK [1][-]{section.27}{2.2 Elements of a Natural Language parser}{chapter.19}% 20
-\BOOKMARK [2][-]{subsection.28}{2.2.1 Clause level tags}{section.27}% 21
-\BOOKMARK [2][-]{subsection.29}{2.2.2 Phrase level tags}{section.27}% 22
-\BOOKMARK [2][-]{subsection.30}{2.2.3 Word level tags}{section.27}% 23
-\BOOKMARK [0][-]{chapter.31}{3. METHODS AND PROCEDURES}{}% 24
-\BOOKMARK [1][-]{section.32}{3.1 Designing a NLPL Visitor}{chapter.31}% 25
-\BOOKMARK [2][-]{subsection.33}{3.1.1 Visitor Pattern}{section.32}% 26
-\BOOKMARK [2][-]{subsection.34}{3.1.2 NLPLVisitor}{section.32}% 27
-\BOOKMARK [1][-]{section.35}{3.2 Solving Problems between Natural Language and Programming Language}{chapter.31}% 28
-\BOOKMARK [2][-]{subsection.36}{3.2.1 Context: Extracting Information from Variable and Literal}{section.35}% 29
-\BOOKMARK [2][-]{subsection.37}{3.2.2 NL Tree Transformation}{section.35}% 30
-\BOOKMARK [2][-]{subsection.38}{3.2.3 Phrase: Connecting information between each Phrase in translation}{section.35}% 31
-\BOOKMARK [2][-]{subsection.39}{3.2.4 Rules for translating Natural Language elements}{section.35}% 32
-\BOOKMARK [2][-]{subsection.40}{3.2.5 Solving IR on Noun Phrase as class name}{section.35}% 33
-\BOOKMARK [2][-]{subsection.43}{3.2.6 Solving IR on Verb Phrase as Statement Trigger}{section.35}% 34
-\BOOKMARK [2][-]{subsection.44}{3.2.7 Solving IR on Verb Phrase as Method Invocation}{section.35}% 35
-\BOOKMARK [2][-]{subsection.45}{3.2.8 Solving IR on Preposition as Method API}{section.35}% 36
-\BOOKMARK [2][-]{subsection.46}{3.2.9 NLPL Architecture Overview}{section.35}% 37
-\BOOKMARK [0][-]{chapter.47}{4. EXPERIMENTAL}{}% 38
-\BOOKMARK [1][-]{section.48}{4.1 Data Preparation}{chapter.47}% 39
-\BOOKMARK [1][-]{section.49}{4.2 Experiment Result}{chapter.47}% 40
-\BOOKMARK [1][-]{section.51}{4.3 Result Analysis}{chapter.47}% 41
-\BOOKMARK [1][-]{section.52}{4.4 NLPL Online IDE}{chapter.47}% 42
-\BOOKMARK [0][-]{chapter.53}{5. SUMMARY AND DISCUSSION}{}% 43
-\BOOKMARK [1][-]{section.54}{5.1 Related Works on Syntax-based approach in translation between Natural Languages}{chapter.53}% 44
-\BOOKMARK [1][-]{section.55}{5.2 Related Works on Inferring Implementation}{chapter.53}% 45
-\BOOKMARK [0][-]{appendix.57}{A. ADDITIONAL MATERIAL}{}% 46
-\BOOKMARK [0][-]{appendix.59}{B. STATISTICAL RESULTS}{}% 47
+\BOOKMARK [1][-]{section.12}{1.2 Challenges of realizing Literate Programming}{chapter.9}% 8
+\BOOKMARK [2][-]{subsection.13}{1.2.1 Manually writing documentation and implementation}{section.12}% 9
+\BOOKMARK [2][-]{subsection.14}{1.2.2 Automatically inferring implementation by Machine Translation }{section.12}% 10
+\BOOKMARK [1][-]{section.22}{1.3 Direction of a syntax-based approach for Natural Language to Programming Language translation}{chapter.9}% 11
+\BOOKMARK [0][-]{chapter.23}{2. REVIEW OF LITERATURE}{}% 12
+\BOOKMARK [1][-]{section.24}{2.1 Differences between Natural Language and Programming Language}{chapter.23}% 13
+\BOOKMARK [2][-]{subsection.25}{2.1.1 Deixis}{section.24}% 14
+\BOOKMARK [2][-]{subsection.26}{2.1.2 Expressiveness}{section.24}% 15
+\BOOKMARK [2][-]{subsection.27}{2.1.3 Phrases}{section.24}% 16
+\BOOKMARK [2][-]{subsection.28}{2.1.4 Anaphoric Relations}{section.24}% 17
+\BOOKMARK [2][-]{subsection.29}{2.1.5 Context}{section.24}% 18
+\BOOKMARK [2][-]{subsection.30}{2.1.6 Ambiguity}{section.24}% 19
+\BOOKMARK [1][-]{section.31}{2.2 Elements of a Natural Language parser}{chapter.23}% 20
+\BOOKMARK [2][-]{subsection.32}{2.2.1 Clause level tags}{section.31}% 21
+\BOOKMARK [2][-]{subsection.33}{2.2.2 Phrase level tags}{section.31}% 22
+\BOOKMARK [2][-]{subsection.34}{2.2.3 Word level tags}{section.31}% 23
+\BOOKMARK [0][-]{chapter.35}{3. METHODS AND PROCEDURES}{}% 24
+\BOOKMARK [1][-]{section.36}{3.1 Designing a NLPL Visitor}{chapter.35}% 25
+\BOOKMARK [2][-]{subsection.37}{3.1.1 Visitor Pattern}{section.36}% 26
+\BOOKMARK [2][-]{subsection.38}{3.1.2 NLPLVisitor}{section.36}% 27
+\BOOKMARK [1][-]{section.39}{3.2 Solving Problems between Natural Language and Programming Language}{chapter.35}% 28
+\BOOKMARK [2][-]{subsection.40}{3.2.1 Context: Extracting Information from Variable and Literal}{section.39}% 29
+\BOOKMARK [2][-]{subsection.41}{3.2.2 NL Tree Transformation}{section.39}% 30
+\BOOKMARK [2][-]{subsection.42}{3.2.3 Phrase: Connecting information between each Phrase in translation}{section.39}% 31
+\BOOKMARK [2][-]{subsection.43}{3.2.4 Rules for translating Natural Language elements}{section.39}% 32
+\BOOKMARK [2][-]{subsection.44}{3.2.5 Solving IR on Noun Phrase as class name}{section.39}% 33
+\BOOKMARK [2][-]{subsection.47}{3.2.6 Solving IR on Verb Phrase as Statement Trigger}{section.39}% 34
+\BOOKMARK [2][-]{subsection.48}{3.2.7 Solving IR on Verb Phrase as Method Invocation}{section.39}% 35
+\BOOKMARK [2][-]{subsection.49}{3.2.8 Solving IR on Preposition as Method API}{section.39}% 36
+\BOOKMARK [0][-]{chapter.50}{4. EXPERIMENTAL}{}% 37
+\BOOKMARK [1][-]{section.51}{4.1 Data Preparation}{chapter.50}% 38
+\BOOKMARK [1][-]{section.52}{4.2 Experiment Result}{chapter.50}% 39
+\BOOKMARK [1][-]{section.54}{4.3 Result Analysis}{chapter.50}% 40
+\BOOKMARK [1][-]{section.55}{4.4 NLPL Online IDE}{chapter.50}% 41
+\BOOKMARK [0][-]{chapter.56}{5. SUMMARY AND DISCUSSION}{}% 42
+\BOOKMARK [1][-]{section.57}{5.1 Related Works on Syntax-based approach in translation between Natural Languages}{chapter.56}% 43
+\BOOKMARK [1][-]{section.58}{5.2 Related Works on Inferring Implementation}{chapter.56}% 44
+\BOOKMARK [0][-]{appendix.60}{A. ADDITIONAL MATERIAL}{}% 45
+\BOOKMARK [0][-]{appendix.62}{B. STATISTICAL RESULTS}{}% 46

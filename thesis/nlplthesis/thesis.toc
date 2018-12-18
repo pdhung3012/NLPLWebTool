@@ -11,53 +11,52 @@
 \def \@chapapp {CHAPTER\ }
 \contentsline {chapter}{\numberline {1.}OVERVIEW}{1}{chapter.9}
 \contentsline {section}{\numberline {1.1}Literate Programming}{1}{section.10}
-\contentsline {section}{\numberline {1.2}Challenges of realizing Literate Programming}{2}{section.11}
-\contentsline {subsection}{\numberline {1.2.1}Manually writing documentation and implementation}{2}{subsection.12}
-\contentsline {subsection}{\numberline {1.2.2}Automatically inferring implementation by Machine Translation }{3}{subsection.13}
-\contentsline {subsubsection}{\numberline {1.2.2.1}Lack of high quality Parallel corpus}{3}{subsubsection.14}
-\contentsline {subsubsection}{\numberline {1.2.2.2}MT for Natural Language to Natural Language: Descriptive Model}{4}{subsubsection.15}
-\contentsline {subsubsection}{\numberline {1.2.2.3}MT for Natural Language to Programming Language: Generative Model}{5}{subsubsection.16}
-\contentsline {subsubsection}{\numberline {1.2.2.4}Differences in indirect references between Natural Language and Programming Language}{5}{subsubsection.17}
-\contentsline {section}{\numberline {1.3}Direction of a syntax-based approach for Natural Language to Programming Language translation}{6}{section.18}
-\contentsline {chapter}{\numberline {2.}REVIEW OF LITERATURE}{7}{chapter.19}
-\contentsline {section}{\numberline {2.1}Differences between Natural Language and Programming Language}{7}{section.20}
-\contentsline {subsection}{\numberline {2.1.1}Deixis}{7}{subsection.21}
-\contentsline {subsection}{\numberline {2.1.2}Expressiveness}{8}{subsection.22}
-\contentsline {subsection}{\numberline {2.1.3}Phrases}{9}{subsection.23}
-\contentsline {subsection}{\numberline {2.1.4}Anaphoric Relations}{9}{subsection.24}
-\contentsline {subsection}{\numberline {2.1.5}Context}{10}{subsection.25}
-\contentsline {subsection}{\numberline {2.1.6}Ambiguity}{11}{subsection.26}
-\contentsline {section}{\numberline {2.2}Elements of a Natural Language parser}{12}{section.27}
-\contentsline {subsection}{\numberline {2.2.1}Clause level tags}{12}{subsection.28}
-\contentsline {subsection}{\numberline {2.2.2}Phrase level tags}{13}{subsection.29}
-\contentsline {subsection}{\numberline {2.2.3}Word level tags}{13}{subsection.30}
-\contentsline {chapter}{\numberline {3.}METHODS AND PROCEDURES}{14}{chapter.31}
-\contentsline {section}{\numberline {3.1}Designing a NLPL Visitor}{14}{section.32}
-\contentsline {subsection}{\numberline {3.1.1}Visitor Pattern}{14}{subsection.33}
-\contentsline {subsection}{\numberline {3.1.2}NLPLVisitor}{15}{subsection.34}
-\contentsline {section}{\numberline {3.2}Solving Problems between Natural Language and Programming Language}{16}{section.35}
-\contentsline {subsection}{\numberline {3.2.1}Context: Extracting Information from Variable and Literal}{16}{subsection.36}
-\contentsline {subsection}{\numberline {3.2.2}NL Tree Transformation}{17}{subsection.37}
-\contentsline {subsection}{\numberline {3.2.3}Phrase: Connecting information between each Phrase in translation}{18}{subsection.38}
-\contentsline {subsection}{\numberline {3.2.4}Rules for translating Natural Language elements}{18}{subsection.39}
-\contentsline {subsection}{\numberline {3.2.5}Solving IR on Noun Phrase as class name}{19}{subsection.40}
-\contentsline {subsubsection}{\numberline {3.2.5.1}Identifying class name as Noun Phrase}{19}{subsubsection.41}
-\contentsline {subsubsection}{\numberline {3.2.5.2}Resolving types for class name}{19}{subsubsection.42}
-\contentsline {subsection}{\numberline {3.2.6}Solving IR on Verb Phrase as Statement Trigger}{19}{subsection.43}
-\contentsline {subsection}{\numberline {3.2.7}Solving IR on Verb Phrase as Method Invocation}{19}{subsection.44}
-\contentsline {subsection}{\numberline {3.2.8}Solving IR on Preposition as Method API}{19}{subsection.45}
-\contentsline {subsection}{\numberline {3.2.9}NLPL Architecture Overview}{19}{subsection.46}
+\contentsline {section}{\numberline {1.2}Challenges of realizing Literate Programming}{2}{section.12}
+\contentsline {subsection}{\numberline {1.2.1}Manually writing documentation and implementation}{2}{subsection.13}
+\contentsline {subsection}{\numberline {1.2.2}Automatically inferring implementation by Machine Translation }{4}{subsection.14}
+\contentsline {subsubsection}{\numberline {1.2.2.1}Lack of high quality Parallel corpus}{4}{subsubsection.15}
+\contentsline {subsubsection}{\numberline {1.2.2.2}MT for Natural Language to Natural Language: Descriptive Model}{5}{subsubsection.16}
+\contentsline {subsubsection}{\numberline {1.2.2.3}MT for Natural Language to Programming Language: Generative Model}{6}{subsubsection.18}
+\contentsline {subsubsection}{\numberline {1.2.2.4}Differences in indirect references between Natural Language and Programming Language}{6}{subsubsection.20}
+\contentsline {section}{\numberline {1.3}Direction of a syntax-based approach for Natural Language to Programming Language translation}{7}{section.22}
+\contentsline {chapter}{\numberline {2.}REVIEW OF LITERATURE}{8}{chapter.23}
+\contentsline {section}{\numberline {2.1}Differences between Natural Language and Programming Language}{8}{section.24}
+\contentsline {subsection}{\numberline {2.1.1}Deixis}{8}{subsection.25}
+\contentsline {subsection}{\numberline {2.1.2}Expressiveness}{9}{subsection.26}
+\contentsline {subsection}{\numberline {2.1.3}Phrases}{10}{subsection.27}
+\contentsline {subsection}{\numberline {2.1.4}Anaphoric Relations}{10}{subsection.28}
+\contentsline {subsection}{\numberline {2.1.5}Context}{11}{subsection.29}
+\contentsline {subsection}{\numberline {2.1.6}Ambiguity}{12}{subsection.30}
+\contentsline {section}{\numberline {2.2}Elements of a Natural Language parser}{13}{section.31}
+\contentsline {subsection}{\numberline {2.2.1}Clause level tags}{13}{subsection.32}
+\contentsline {subsection}{\numberline {2.2.2}Phrase level tags}{14}{subsection.33}
+\contentsline {subsection}{\numberline {2.2.3}Word level tags}{14}{subsection.34}
+\contentsline {chapter}{\numberline {3.}METHODS AND PROCEDURES}{15}{chapter.35}
+\contentsline {section}{\numberline {3.1}Designing a NLPL Visitor}{15}{section.36}
+\contentsline {subsection}{\numberline {3.1.1}Visitor Pattern}{15}{subsection.37}
+\contentsline {subsection}{\numberline {3.1.2}NLPLVisitor}{16}{subsection.38}
+\contentsline {section}{\numberline {3.2}Solving Problems between Natural Language and Programming Language}{17}{section.39}
+\contentsline {subsection}{\numberline {3.2.1}Context: Extracting Information from Variable and Literal}{17}{subsection.40}
+\contentsline {subsection}{\numberline {3.2.2}NL Tree Transformation}{18}{subsection.41}
+\contentsline {subsection}{\numberline {3.2.3}Phrase: Connecting information between each Phrase in translation}{19}{subsection.42}
+\contentsline {subsection}{\numberline {3.2.4}Rules for translating Natural Language elements}{19}{subsection.43}
+\contentsline {subsection}{\numberline {3.2.5}Solving IR on Noun Phrase as class name}{20}{subsection.44}
+\contentsline {subsubsection}{\numberline {3.2.5.1}Identifying class name as Noun Phrase}{20}{subsubsection.45}
+\contentsline {subsubsection}{\numberline {3.2.5.2}Resolving types for class name}{20}{subsubsection.46}
+\contentsline {subsection}{\numberline {3.2.6}Solving IR on Verb Phrase as Statement Trigger}{20}{subsection.47}
+\contentsline {subsection}{\numberline {3.2.7}Solving IR on Verb Phrase as Method Invocation}{20}{subsection.48}
+\contentsline {subsection}{\numberline {3.2.8}Solving IR on Preposition as Method API}{20}{subsection.49}
 \newpage 
-\contentsline {chapter}{\numberline {4.}EXPERIMENTAL}{20}{chapter.47}
-\contentsline {section}{\numberline {4.1}Data Preparation}{20}{section.48}
-\contentsline {section}{\numberline {4.2}Experiment Result}{20}{section.49}
-\contentsline {section}{\numberline {4.3}Result Analysis}{28}{section.51}
-\contentsline {section}{\numberline {4.4}NLPL Online IDE}{28}{section.52}
-\contentsline {chapter}{\numberline {5.}SUMMARY AND DISCUSSION}{30}{chapter.53}
-\contentsline {section}{\numberline {5.1}Related Works on Syntax-based approach in translation between Natural Languages}{30}{section.54}
-\contentsline {section}{\numberline {5.2}Related Works on Inferring Implementation}{30}{section.55}
+\contentsline {chapter}{\numberline {4.}EXPERIMENTAL}{21}{chapter.50}
+\contentsline {section}{\numberline {4.1}Data Preparation}{21}{section.51}
+\contentsline {section}{\numberline {4.2}Experiment Result}{21}{section.52}
+\contentsline {section}{\numberline {4.3}Result Analysis}{29}{section.54}
+\contentsline {section}{\numberline {4.4}NLPL Online IDE}{29}{section.55}
+\contentsline {chapter}{\numberline {5.}SUMMARY AND DISCUSSION}{31}{chapter.56}
+\contentsline {section}{\numberline {5.1}Related Works on Syntax-based approach in translation between Natural Languages}{31}{section.57}
+\contentsline {section}{\numberline {5.2}Related Works on Inferring Implementation}{31}{section.58}
 \def \@chapapp {}
 \def \@chapapp {APPENDIX\ }
-\contentsline {chapter}{\numberline {A.}ADDITIONAL MATERIAL}{32}{appendix.57}
-\contentsline {chapter}{\numberline {B.}STATISTICAL RESULTS}{33}{appendix.59}
+\contentsline {chapter}{\numberline {A.}ADDITIONAL MATERIAL}{34}{appendix.60}
+\contentsline {chapter}{\numberline {B.}STATISTICAL RESULTS}{35}{appendix.62}
 \contentsfinish 
