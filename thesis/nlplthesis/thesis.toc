@@ -25,39 +25,39 @@
 \contentsline {subsection}{\numberline {2.1.2}Expressiveness}{9}{subsection.27}
 \contentsline {subsection}{\numberline {2.1.3}Phrases}{10}{subsection.29}
 \contentsline {subsection}{\numberline {2.1.4}Anaphoric Relations}{11}{subsection.31}
-\contentsline {subsection}{\numberline {2.1.5}Context}{12}{subsection.32}
-\contentsline {subsection}{\numberline {2.1.6}Ambiguity}{13}{subsection.33}
-\contentsline {section}{\numberline {2.2}Elements of a Natural Language parser}{14}{section.34}
-\contentsline {subsection}{\numberline {2.2.1}Clause level tags}{14}{subsection.35}
-\contentsline {subsection}{\numberline {2.2.2}Phrase level tags}{16}{subsection.38}
-\contentsline {subsection}{\numberline {2.2.3}Word level tags}{20}{subsection.40}
-\contentsline {chapter}{\numberline {3.}METHODS AND PROCEDURES}{21}{chapter.41}
-\contentsline {section}{\numberline {3.1}Designing a NLPL Visitor}{21}{section.42}
-\contentsline {subsection}{\numberline {3.1.1}Visitor Pattern}{21}{subsection.43}
-\contentsline {subsection}{\numberline {3.1.2}NLPLVisitor}{22}{subsection.44}
-\contentsline {section}{\numberline {3.2}Solving Problems between Natural Language and Programming Language}{23}{section.45}
-\contentsline {subsection}{\numberline {3.2.1}Context: Extracting Information from Variable and Literal}{23}{subsection.46}
-\contentsline {subsection}{\numberline {3.2.2}NL Tree Transformation}{24}{subsection.47}
-\contentsline {subsection}{\numberline {3.2.3}Phrase: Connecting information between each Phrase in translation}{25}{subsection.48}
-\contentsline {subsection}{\numberline {3.2.4}Rules for translating Natural Language elements}{25}{subsection.49}
-\contentsline {subsection}{\numberline {3.2.5}Solving IR on Noun Phrase as class name}{26}{subsection.50}
-\contentsline {subsubsection}{\numberline {3.2.5.1}Identifying class name as Noun Phrase}{26}{subsubsection.51}
-\contentsline {subsubsection}{\numberline {3.2.5.2}Resolving types for class name}{26}{subsubsection.52}
-\contentsline {subsection}{\numberline {3.2.6}Solving IR on Verb Phrase as Synonyms}{26}{subsection.53}
-\contentsline {subsection}{\numberline {3.2.7}Solving IR on Verb Phrase as Statement Trigger}{26}{subsection.54}
-\contentsline {subsection}{\numberline {3.2.8}Solving IR on Verb Phrase as Method Invocation}{26}{subsection.55}
-\contentsline {subsection}{\numberline {3.2.9}Solving IR on Preposition as Method APIs}{26}{subsection.56}
+\contentsline {subsection}{\numberline {2.1.5}Context}{12}{subsection.33}
+\contentsline {subsection}{\numberline {2.1.6}Ambiguity}{13}{subsection.34}
+\contentsline {section}{\numberline {2.2}Elements of a Natural Language parser}{15}{section.37}
+\contentsline {subsection}{\numberline {2.2.1}Clause level tags}{16}{subsection.38}
+\contentsline {subsection}{\numberline {2.2.2}Phrase level tags}{17}{subsection.41}
+\contentsline {subsection}{\numberline {2.2.3}Word level tags}{22}{subsection.43}
+\contentsline {chapter}{\numberline {3.}METHODS AND PROCEDURES}{23}{chapter.44}
+\contentsline {section}{\numberline {3.1}Designing a NLPL Visitor}{23}{section.45}
+\contentsline {subsection}{\numberline {3.1.1}Visitor Pattern}{23}{subsection.46}
+\contentsline {subsection}{\numberline {3.1.2}NLPLVisitor}{24}{subsection.47}
+\contentsline {section}{\numberline {3.2}Solving Problems between Natural Language and Programming Language}{25}{section.48}
+\contentsline {subsection}{\numberline {3.2.1}Context: Extracting Information from Variable and Literal}{25}{subsection.49}
+\contentsline {subsection}{\numberline {3.2.2}NL Tree Transformation}{26}{subsection.50}
+\contentsline {subsection}{\numberline {3.2.3}Phrase: Connecting information between each Phrase in translation}{27}{subsection.51}
+\contentsline {subsection}{\numberline {3.2.4}Rules for translating Natural Language elements}{27}{subsection.52}
+\contentsline {subsection}{\numberline {3.2.5}Solving IR on Noun Phrase as class name}{28}{subsection.53}
+\contentsline {subsubsection}{\numberline {3.2.5.1}Identifying class name as Noun Phrase}{28}{subsubsection.54}
+\contentsline {subsubsection}{\numberline {3.2.5.2}Resolving types for class name}{28}{subsubsection.55}
+\contentsline {subsection}{\numberline {3.2.6}Solving IR on Verb Phrase as Synonyms}{28}{subsection.56}
+\contentsline {subsection}{\numberline {3.2.7}Solving IR on Verb Phrase as Statement Trigger}{28}{subsection.57}
+\contentsline {subsection}{\numberline {3.2.8}Solving IR on Verb Phrase as Method Invocation}{28}{subsection.58}
+\contentsline {subsection}{\numberline {3.2.9}Solving IR on Preposition as Method APIs}{28}{subsection.59}
 \newpage 
-\contentsline {chapter}{\numberline {4.}EXPERIMENTAL}{27}{chapter.57}
-\contentsline {section}{\numberline {4.1}Data Preparation}{27}{section.58}
-\contentsline {section}{\numberline {4.2}Experiment Result}{27}{section.59}
-\contentsline {section}{\numberline {4.3}Result Analysis}{35}{section.61}
-\contentsline {section}{\numberline {4.4}NLPL Online IDE}{35}{section.62}
-\contentsline {chapter}{\numberline {5.}SUMMARY AND DISCUSSION}{37}{chapter.63}
-\contentsline {section}{\numberline {5.1}Related Works on Syntax-based approach in translation between Natural Languages}{37}{section.64}
-\contentsline {section}{\numberline {5.2}Related Works on Inferring Implementation}{37}{section.65}
+\contentsline {chapter}{\numberline {4.}EXPERIMENTAL}{29}{chapter.60}
+\contentsline {section}{\numberline {4.1}Data Preparation}{29}{section.61}
+\contentsline {section}{\numberline {4.2}Experiment Result}{29}{section.62}
+\contentsline {section}{\numberline {4.3}Result Analysis}{37}{section.64}
+\contentsline {section}{\numberline {4.4}NLPL Online IDE}{37}{section.65}
+\contentsline {chapter}{\numberline {5.}SUMMARY AND DISCUSSION}{39}{chapter.66}
+\contentsline {section}{\numberline {5.1}Related Works on Syntax-based approach in translation between Natural Languages}{39}{section.67}
+\contentsline {section}{\numberline {5.2}Related Works on Inferring Implementation}{39}{section.68}
 \def \@chapapp {}
 \def \@chapapp {APPENDIX\ }
-\contentsline {chapter}{\numberline {A.}ADDITIONAL MATERIAL}{40}{appendix.67}
-\contentsline {chapter}{\numberline {B.}STATISTICAL RESULTS}{41}{appendix.69}
+\contentsline {chapter}{\numberline {A.}ADDITIONAL MATERIAL}{42}{appendix.70}
+\contentsline {chapter}{\numberline {B.}STATISTICAL RESULTS}{43}{appendix.72}
 \contentsfinish 
