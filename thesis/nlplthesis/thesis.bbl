@@ -7,6 +7,12 @@ Barone, A. V.~M. and Sennrich, R. (2017).
   automated code documentation and code generation.
 \newblock {\em CoRR}, abs/1707.02275.
 
+\bibitem[\protect\astroncite{Cambridge-Dictionary}{}]{Cambridge:STag}
+Cambridge-Dictionary.
+\newblock Cambridgge dictionary.
+\newblock
+  \url{https://dictionary.cambridge.org/us/grammar/british-grammar/about-words-clauses-and-sentences/clause-types}.
+
 \bibitem[\protect\astroncite{Gvero and
   Kuncak}{2015}]{Gvero:2015:SJE:2814270.2814295}
 Gvero, T. and Kuncak, V. (2015).
@@ -68,6 +74,11 @@ StackExchange (2010).
 \newblock Why isn't literate programming mainstream?
 \newblock
   \url{https://softwareengineering.stackexchange.com/questions/811/why-isnt-literate-programming-mainstream}.
+
+\bibitem[\protect\astroncite{Taylor et~al.}{2003}]{Taylor2003}
+Taylor, A., Marcus, M., and Santorini, B. (2003).
+\newblock {\em The Penn Treebank: An Overview}, pages 5--22.
+\newblock Springer Netherlands, Dordrecht.
 
 \bibitem[\protect\astroncite{Young et~al.}{2018}]{8416973}
 Young, T., Hazarika, D., Poria, S., and Cambria, E. (2018).

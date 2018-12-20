@@ -4,7 +4,7 @@
 In the previous chapter, we discuss main problems of NL to PL translation and elements of NL Parser, which are different types of tags for building an NL parse tree representation for NL sentence. These knowledge help us for gaining background to design our syntax-based approach for NL to PL translation. while NLP researches relies on analyzing NL parsed tree, we also considered NL parsed tree for NL description as the core element for translation. To handle the syntax of NL parsed tree, we relied on how programming language handled an Abstract Syntax Tree (AST) which is a representation of a source code file by building ASTVisitor. Based on ideas of ASTVisitor in PL, we designed the NLPLVisitor for NL to PL translation.  
 \section{Designing a NLPL Visitor}
 \subsection{Visitor Pattern}
-In programming language design, collections are most important data types. A collection may have instances from multiple types. Since we usually use loop for handling information from collection, it is very common that we need to write an operation or method to handle each element of collection without knowing the type of each elements. There is one way to write an operation, which used "instanceof" condition to check the type of each elements in a collection, however this way is not reflecting object oriented design. 
+In programming language design, collections are most important data types. A collection may have instances from multiple types. Since we usually use loop for handling information from collection, it is very common that we need to write an operation or method to handle each element of collection without knowing the type of each elements. There is one way to write an operation, which used "instance of" condition to check the type of each elements in a collection, however this way is not reflecting object oriented design. 
 
 A pattern that allows handle element of different types inside a collection in object oriented way calls Visitor pattern. In a visitor pattern, developers have the ability for representing operations on each types of elements of a collection. Besides, it allows you to write new operation without interfering the previous operations you define for types of element. In other words, visitor pattern overcomes the conflict between object structure s and algorithm  which the the object structure operates on, means you can update the algorithm handling for each elements without changing the structure of element. Along with collections, visitor pattern is also available for other data type structures such as tree structure.
 
@@ -36,9 +36,10 @@ In the NLPLVisitor, we provide rules for handling each NL tags. The main idea is
 \subsection{Solving IR on Noun Phrase as class name}
 \subsubsection{Identifying  class name as Noun Phrase}
 \subsubsection{Resolving types for  class name}
+\subsection{Solving IR on Verb Phrase as Synonyms}
 \subsection{Solving IR on Verb Phrase as Statement Trigger}
 \subsection{Solving IR on Verb Phrase as Method Invocation}
-\subsection{Solving IR on Preposition as Method API}
+\subsection{Solving IR on Preposition as Method APIs}
 
 
 
