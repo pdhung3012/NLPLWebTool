@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 DEC 2018 12:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 DEC 2018 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -506,7 +506,7 @@ ABSTRACT
 
  (./Body/chapter1.tex
 CHAPTER\  1.
-<resources/fig_lp_file.png, id=310, 540.0175pt x 237.88875pt>
+<resources/fig_lp_file.png, id=316, 540.0175pt x 237.88875pt>
 File: resources/fig_lp_file.png Graphic file (type png)
 
 <use resources/fig_lp_file.png>
@@ -518,7 +518,7 @@ Package pdftex.def Info: resources/fig_lp_file.png used on input line 13.
 
 
  <./resources/fig_lp_file.png>] [2] [3]
-[4] <resources/fig_nmt_nl_example.png, id=333, 791.95876pt x 155.58125pt>
+[4] <resources/fig_nmt_nl_example.png, id=339, 791.95876pt x 155.58125pt>
 File: resources/fig_nmt_nl_example.png Graphic file (type png)
 
 <use resources/fig_nmt_nl_example.png>
@@ -527,7 +527,7 @@ Package pdftex.def Info: resources/fig_nmt_nl_example.png used on input line 41
 (pdftex.def)             Requested size: 398.34694pt x 85.35866pt.
 \@tempboxb=\box36
 
-<resources/fig_spectrans_example.png, id=335, 804.00375pt x 143.53625pt>
+<resources/fig_spectrans_example.png, id=341, 804.00375pt x 143.53625pt>
 File: resources/fig_spectrans_example.png Graphic file (type png)
 
 <use resources/fig_spectrans_example.png>
@@ -536,7 +536,7 @@ Package pdftex.def Info: resources/fig_spectrans_example.png used on input line
 (pdftex.def)             Requested size: 398.33273pt x 85.36021pt.
 \@tempboxb=\box37
  [5 <./resources/fig_nmt_nl_example.png>] <resources/fig_xvar_example.png, id=3
-43, 352.31625pt x 97.36375pt>
+49, 352.31625pt x 97.36375pt>
 File: resources/fig_xvar_example.png Graphic file (type png)
 
 <use resources/fig_xvar_example.png>
@@ -554,7 +554,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-<resources/fig_deixis_example.png, id=356, 969.6225pt x 238.8925pt>
+<resources/fig_deixis_example.png, id=362, 969.6225pt x 238.8925pt>
 File: resources/fig_deixis_example.png Graphic file (type png)
 
 <use resources/fig_deixis_example.png>
@@ -576,7 +576,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
 
 
-] <resources/fig_expressiveness_example.png, id=363, 626.34pt x 190.7125pt>
+] <resources/fig_expressiveness_example.png, id=369, 626.34pt x 190.7125pt>
 File: resources/fig_expressiveness_example.png Graphic file (type png)
 
 <use resources/fig_expressiveness_example.png>
@@ -594,7 +594,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-<resources/fig_phrase_example.png, id=369, 606.265pt x 247.92625pt>
+<resources/fig_phrase_example.png, id=375, 606.265pt x 247.92625pt>
 File: resources/fig_phrase_example.png Graphic file (type png)
 
 <use resources/fig_phrase_example.png>
@@ -607,7 +607,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-<resources/fig_anaphoric_example.png, id=378, 973.6375pt x 274.02374pt>
+<resources/fig_anaphoric_example.png, id=384, 973.6375pt x 274.02374pt>
 File: resources/fig_anaphoric_example.png Graphic file (type png)
 
 <use resources/fig_anaphoric_example.png>
@@ -635,7 +635,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-<resources/fig_url_ambiguous_example.png, id=392, 409.53pt x 266.9975pt>
+<resources/fig_url_ambiguous_example.png, id=398, 409.53pt x 266.9975pt>
 File: resources/fig_url_ambiguous_example.png Graphic file (type png)
 
 <use resources/fig_url_ambiguous_example.png>
@@ -649,7 +649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
  []
 
 [13]
-<resources/fig_set_ambiguous_example.png, id=399, 439.6425pt x 210.7875pt>
+<resources/fig_set_ambiguous_example.png, id=405, 439.6425pt x 210.7875pt>
 File: resources/fig_set_ambiguous_example.png Graphic file (type png)
 
 <use resources/fig_set_ambiguous_example.png>
@@ -662,7 +662,7 @@ line 82.
 LaTeX Warning: Reference `' on page 14 undefined on input line 88.
 
 [14 <./resources/fig_url_ambiguous_example.png>]
-<resources/fig_stag_example.png, id=406, 332.24126pt x 192.72pt>
+<resources/fig_stag_example.png, id=412, 332.24126pt x 192.72pt>
 File: resources/fig_stag_example.png Graphic file (type png)
 
 <use resources/fig_stag_example.png>
@@ -670,7 +670,7 @@ Package pdftex.def Info: resources/fig_stag_example.png used on input line 98.
 (pdftex.def)             Requested size: 227.62444pt x 113.80966pt.
 \@tempboxb=\box45
  [15 <./resources/fig_set_ambiguous_example.png>]
-<resources/fig_sbar_sbarq_2examples.png, id=414, 695.59875pt x 190.7125pt>
+<resources/fig_sbar_sbarq_2examples.png, id=420, 695.59875pt x 190.7125pt>
 File: resources/fig_sbar_sbarq_2examples.png Graphic file (type png)
 
 <use resources/fig_sbar_sbarq_2examples.png>
@@ -679,42 +679,46 @@ ine 106.
 (pdftex.def)             Requested size: 398.33163pt x 113.81145pt.
 \@tempboxb=\box46
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--125
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 \OT1/cmr/m/n/10.95 si-bly empty) sub-or-di-nat-ing
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 129--129
+Underfull \hbox (badness 2027) in paragraph at lines 128--128
 []|\OT1/cmr/m/n/10.95 - In-verted declar-a-tive sentence-
  []
 
 
-Overfull \hbox (62.40709pt too wide) in alignment at lines 113--157
+Overfull \hbox (62.40709pt too wide) in alignment at lines 113--158
  [] [] [] [] [] 
  []
 
 [16 <./resources/fig_stag_example.png>]
-Overfull \hbox (2.1446pt too wide) in paragraph at lines 165--165
+Underfull \vbox (badness 10000) detected at line 158
+ []
+
+
+Overfull \hbox (2.1446pt too wide) in paragraph at lines 164--164
 []|\OT1/cmr/m/n/10.95 WHADJP| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
 []|\OT1/cmr/m/n/10.95 - Un-known, un-cer-tain, or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
 \OT1/cmr/m/n/10.95 unbracketable.- Not pop-u-lar
  []
 
 
-Underfull \hbox (badness 4467) in paragraph at lines 185--185
+Underfull \hbox (badness 4467) in paragraph at lines 184--184
 []|\OT1/cmr/m/n/10.95 preposition, sub-or-di-nat-ing con-
  []
 
 
-Overfull \hbox (62.40709pt too wide) in alignment at lines 157--197
+Overfull \hbox (62.40709pt too wide) in alignment at lines 158--198
  [] [] [] [] [] 
  []
 
@@ -729,12 +733,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Overfull \hbox (62.40709pt too wide) in alignment at lines 197--237
+Overfull \hbox (62.40709pt too wide) in alignment at lines 198--238
  [] [] [] [] [] 
  []
 
 [19]
-Overfull \hbox (62.40709pt too wide) in alignment at lines 237--274
+Overfull \hbox (62.40709pt too wide) in alignment at lines 238--274
  [] [] [] [] [] 
  []
 
@@ -752,18 +756,19 @@ CHAPTER\  3.
 
  (./Body/chapter4.tex
 CHAPTER\  4.
+\@tempboxb=\box47
 
-Underfull \hbox (badness 6808) in paragraph at lines 32--32
+Underfull \hbox (badness 6808) in paragraph at lines 37--37
 []|\OT1/cmr/m/n/10.95 FileUtils .copy-File(new File(fname),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .get-Con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \OT1/cmr/m/n/10.95 textClass-Loader() .load-Class( "My-
  []
 
@@ -774,12 +779,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .get-Con-
  []
 
 
-Underfull \hbox (badness 2253) in paragraph at lines 36--36
+Underfull \hbox (badness 2253) in paragraph at lines 41--41
 \OT1/cmr/m/n/10.95 textClass-Loader() .load-Class(MyClass
  []
 
@@ -790,7 +795,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 7468) in paragraph at lines 38--38
+Underfull \hbox (badness 7468) in paragraph at lines 43--43
 []|\OT1/cmr/m/n/10.95 new LineNum-ber-Reader(new In-put-
  []
 
@@ -813,7 +818,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
 []|\OT1/cmr/m/n/10.95 FileUtils .writeStringToFile(new
  []
 
@@ -830,7 +835,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 []|\OT1/cmr/m/n/10.95 open con-nec-tion
  []
 
@@ -847,12 +852,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 []|\OT1/cmr/m/n/10.95 create socket
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 []|\OT1/cmr/m/n/10.95 new Socket( "http://www .or-a-cle
  []
 
@@ -887,22 +892,22 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--62
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .set-Pri-or-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .set-Pri-or-
  []
 
 
-Overfull \hbox (49.99994pt too wide) in alignment at lines 22--64
+Overfull \hbox (49.99994pt too wide) in alignment at lines 26--69
  [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 64
+Underfull \vbox (badness 10000) detected at line 69
  []
 
 Missing character: There is no ‚ in font cmr10!
@@ -930,7 +935,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
 []|\OT1/cmr/m/n/10.95 new Prop-er-ties() .set-Prop-erty(gate
  []
 
@@ -941,7 +946,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 []|\OT1/cmr/m/n/10.95 FileDeleteStrategy .NOR-MAL
  []
 
@@ -964,12 +969,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .get-Stack-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .get-Stack-
  []
 
@@ -980,7 +985,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 7468) in paragraph at lines 98--98
+Underfull \hbox (badness 7468) in paragraph at lines 103--103
 []|\OT1/cmr/m/n/10.95 new LineNum-ber-Reader(new In-put-
  []
 
@@ -997,7 +1002,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
 []|\OT1/cmr/m/n/10.95 Calendar .getInstance() .set-Time-
  []
 
@@ -1008,12 +1013,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 []|\OT1/cmr/m/n/10.95 Calendar .getInstance() .set-Time-
  []
 
 
-Overfull \hbox (49.99994pt too wide) in alignment at lines 64--104
+Overfull \hbox (49.99994pt too wide) in alignment at lines 69--109
  [] [] [] [] 
  []
 
@@ -1059,7 +1064,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 2564) in paragraph at lines 120--120
+Underfull \hbox (badness 2564) in paragraph at lines 125--125
 []|\OT1/cmr/m/n/10.95 new File(text1 .txt) .re-nameTo(new
  []
 
@@ -1088,7 +1093,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10.95 FileUtils .move-File(new File(text1
  []
 
@@ -1099,7 +1104,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 2443) in paragraph at lines 126--126
+Underfull \hbox (badness 2443) in paragraph at lines 131--131
 []|\OT1/cmr/m/n/10.95 FileUtils .read-File-ToString(new File(
  []
 
@@ -1110,22 +1115,22 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .set-Pri-or-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .set-Pri-or-
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 134--134
+Underfull \hbox (badness 1546) in paragraph at lines 139--139
 []|\OT1/cmr/m/n/10.95 new Panel() .set-Lay-out(new Bor-der-
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 136--136
+Underfull \hbox (badness 1546) in paragraph at lines 141--141
 []|\OT1/cmr/m/n/10.95 new Panel() .set-Lay-out(new Bor-der-
  []
 
@@ -1142,7 +1147,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Overfull \hbox (49.99994pt too wide) in alignment at lines 104--144
+Overfull \hbox (49.99994pt too wide) in alignment at lines 109--149
  [] [] [] [] 
  []
 
@@ -1154,7 +1159,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 1237) in paragraph at lines 146--146
+Underfull \hbox (badness 1237) in paragraph at lines 151--151
 \OT1/cmr/m/n/10.95 put-Stream( "text .txt" )) .writeInt(
  []
 
@@ -1170,13 +1175,13 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 150.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 155.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 150.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 155.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
@@ -1214,7 +1219,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 7468) in paragraph at lines 158--158
+Underfull \hbox (badness 7468) in paragraph at lines 163--163
 []|\OT1/cmr/m/n/10.95 new LineNum-ber-Reader(new In-put-
  []
 
@@ -1225,12 +1230,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
 []|\OT1/cmr/m/n/10.95 new LineNum-ber-Reader(new In-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
 \OT1/cmr/m/n/10.95 put-Stream-Reader(new FileIn-put-
  []
 
@@ -1250,12 +1255,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 []|\OT1/cmr/m/n/10.95 new Ob-jectOut-put-Stream(new
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 \OT1/cmr/m/n/10.95 Buffered-Out-put-Stream(new File-Out-
  []
 
@@ -1266,72 +1271,72 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 []|\OT1/cmr/m/n/10.95 new Ob-jectOut-put-Stream(new
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
 \OT1/cmr/m/n/10.95 Buffered-Out-put-Stream(new File-Out-
  []
 
 
-Overfull \hbox (49.99994pt too wide) in alignment at lines 144--184
+Overfull \hbox (49.99994pt too wide) in alignment at lines 149--189
  [] [] [] [] 
  []
 
 [31] [32]
-Underfull \hbox (badness 1596) in paragraph at lines 186--186
+Underfull \hbox (badness 1596) in paragraph at lines 191--191
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .get-Thread-
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 188--188
+Underfull \hbox (badness 1596) in paragraph at lines 193--193
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .get-Thread-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--192
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 []|\OT1/cmr/m/n/10.95 new Panel() .set-Lay-out(new Grid-
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 200--200
+Underfull \hbox (badness 1728) in paragraph at lines 205--205
 []|\OT1/cmr/m/n/10.95 SplashScreen .get-Splash-Screen() .cre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
 []|\OT1/cmr/m/n/10.95 GraphicsEnvironment .get-Lo-cal-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
 \OT1/cmr/m/n/10.95 Graph-ic-sEn-vi-ron-ment() .get-De-fault-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
 \OT1/cmr/m/n/10.95 Screen-De-vice() .get-Dis-play-Mode()
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
 []|\OT1/cmr/m/n/10.95 GraphicsEnvironment .get-Lo-cal-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
 \OT1/cmr/m/n/10.95 Graph-ic-sEn-vi-ron-ment() .get-De-fault-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
 \OT1/cmr/m/n/10.95 Screen-De-vice() .get-Dis-play-Mode()
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--208
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
 []|\OT1/cmr/m/n/10.95 KeyEvent .getKey-Mod-i-fier-s-
  []
 
@@ -1348,12 +1353,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--212
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 []|\OT1/cmr/m/n/10.95 KeyPairGenerator .getInstance(RSA)
  []
 
 
-Overfull \hbox (49.99994pt too wide) in alignment at lines 184--224
+Overfull \hbox (49.99994pt too wide) in alignment at lines 189--229
  [] [] [] [] 
  []
 
@@ -1371,31 +1376,31 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--234
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 []|\OT1/cmr/m/n/10.95 DateFormat .get-Date-Time-In-stance()
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--236
+Underfull \hbox (badness 10000) in paragraph at lines 241--241
 []|\OT1/cmr/m/n/10.95 DateFormat .get-Date-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--236
+Underfull \hbox (badness 10000) in paragraph at lines 241--241
 \OT1/cmr/m/n/10.95 Time-In-stance(DateFormat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--236
+Underfull \hbox (badness 10000) in paragraph at lines 241--241
 \OT1/cmr/m/n/10.95 .MEDIUM,DateFormat .MEDIUM,
  []
 
 
-Overfull \hbox (49.99994pt too wide) in alignment at lines 224--238
+Overfull \hbox (49.99994pt too wide) in alignment at lines 229--244
  [] [] [] [] 
  []
 
-[34] [35]) [36] [37] [38]
+[34] [35] [36]) [37] [38]
 \openout2 = `Body/chapter5.aux'.
 
  (./Body/chapter5.tex
@@ -1463,7 +1468,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5A357A30171C2FE523671E131C804999;3712.
+(rerunfilecheck)             Checksum: EAB3628A6C453546C7AAF89B46C20B65;3712.
 
 
 LaTeX Warning: There were undefined references.
@@ -1471,10 +1476,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 8667 strings out of 492995
- 125546 string characters out of 6132704
- 283808 words of memory out of 5000000
- 11887 multiletter control sequences out of 15000+600000
+ 8670 strings out of 492995
+ 125602 string characters out of 6132704
+ 283956 words of memory out of 5000000
+ 11889 multiletter control sequences out of 15000+600000
  7806 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,40p,1353b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1485,10 +1490,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (52 pages, 899577 bytes).
+Output written on thesis.pdf (52 pages, 900395 bytes).
 PDF statistics:
- 610 PDF objects out of 1000 (max. 8388607)
- 519 compressed objects within 6 object streams
- 127 named destinations out of 1000 (max. 500000)
+ 614 PDF objects out of 1000 (max. 8388607)
+ 523 compressed objects within 6 object streams
+ 128 named destinations out of 1000 (max. 500000)
  437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

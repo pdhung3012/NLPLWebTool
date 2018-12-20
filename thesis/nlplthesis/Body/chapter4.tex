@@ -8,6 +8,8 @@ In this section, I want to answer on the research question: How well NLPL perfor
 \section{Experiment Result}
 
 \begin{table}[]
+	
+	\centering
 	\begin{tabular}{|l|l|l|l|l|}
 		\hline
 		\textbf{K} & \textbf{AnyCode} & \textbf{NLPL} & \textbf{Top-K of AnyCode} & \textbf{Top-K of NLPL} \\ \hline
@@ -17,15 +19,18 @@ In this section, I want to answer on the research question: How well NLPL perfor
 		4              & 42               & 42            & 80.77\%                   & 80.77\%                \\ \hline
 		5              & 45               & 42            & 86.54\%                   & 80.77\%                \\ \hline
 	\end{tabular}
+ \caption{Top-K Accuracy of NLPL and AnyCode}
+\label{table:TopKAccuracy} 
 \end{table}
 
 \begin{longtable}{|p{.10\textwidth}|p{.35\textwidth}|p{.40\textwidth}|p{.15\textwidth}|}
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+
 		\hline
-		\multicolumn{1}{|c|}{\textbf{No}} & \multicolumn{1}{c|}{\textbf{Natural Language Comment}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\textbf{NLPL Top-1 result}}                                          & \multicolumn{1}{c|}{\textbf{Top-K Acc}} \\ \hline
-		&                                                        & \multicolumn{1}{c|}{\cellcolor[HTML]{9AFF99}\textbf{Expected result}}                                            &                                         \\ \hline
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{FFCCC9}\textbf{No}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\textbf{Natural Language Comment}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\textbf{NLPL Top-1 result}}                                          & \multicolumn{1}{c|}{\cellcolor[HTML]{FFCCC9}\textbf{Top-K Acc}} \\ \hline
+		\cellcolor[HTML]{9AFF99}&   \cellcolor[HTML]{9AFF99}                                                     & \multicolumn{1}{c|}{\cellcolor[HTML]{9AFF99}\textbf{Expected result}}                                            &                 \cellcolor[HTML]{9AFF99}                        \\ \hline
 		\rowcolor[HTML]{FFCCC9} 
 		1                                 & copy file fname to destination                         & FileUtils .copyFile( new File( fname ) ,new File( destination ) )                                                & 1                                       \\ \hline
 		\rowcolor[HTML]{9AFF99} 
@@ -234,7 +239,8 @@ In this section, I want to answer on the research question: How well NLPL perfor
 		52                                & get date instance for Germany                          & DateFormat .getDateTimeInstance() .getDateInstance()                                                             & \textgreater{}10                        \\ \hline
 		\rowcolor[HTML]{9AFF99} 
 		&                                                        & DateFormat .getDateTimeInstance(DateFormat .MEDIUM,DateFormat .MEDIUM, Locale .GERMANY)                          &                                         \\ \hline
-		
+		 \caption[Results of NLPL on 52 queries data set]{Results of NLPL on 52 queries data set}
+		\label{table:TotalResultOnAnyCode} 
 \end{longtable}
 
 \section{Result Analysis}
