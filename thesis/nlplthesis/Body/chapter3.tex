@@ -4,7 +4,7 @@
 In the previous chapter, we discuss main problems of NL to PL translation and elements of NL Parser, which are different types of tags for building an NL parse tree representation for NL sentence. These knowledge help us for gaining background to design our syntax-based approach for NL to PL translation. while NLP researches relies on analyzing NL parsed tree, we also considered NL parsed tree for NL description as the core element for translation. To handle the syntax of NL parsed tree, we relied on how programming language handled an Abstract Syntax Tree (AST) which is a representation of a source code file by building ASTVisitor. Based on ideas of ASTVisitor in PL, we designed the NLPLVisitor for NL to PL translation.  
 \section{Designing a NLPL Visitor}
 \subsection{Visitor Pattern}
-In programming language design, collections are most important data types. A collection may have instances from multiple types. Since we usually use loop for handling information from collection, it is very common that we need to write an operation or method to handle each element of collection without knowing the type of each elements. There is one way to write an operation, which used "instance of" condition to check the type of each elements in a collection, however this way is not reflecting object oriented design. 
+In programming language design, collections are most important data types. A collection mays have instances from multiple types. Since we usually use loop for handling information from collection, it is very common that we need to write an operation or method to handle each element of collection without knowing the type of each elements. There is one way to write an operation, which used "instance of" condition to check the type of each elements in a collection, however this way is not reflecting object oriented design. 
 
 A pattern that allows handle element of different types inside a collection in object oriented way calls Visitor pattern. In a visitor pattern, developers have the ability for representing operations on each types of elements of a collection. Besides, it allows you to write new operation without interfering the previous operations you define for types of element. In other words, visitor pattern overcomes the conflict between object structure s and algorithm  which the the object structure operates on, means you can update the algorithm handling for each elements without changing the structure of element. Along with collections, visitor pattern is also available for other data type structures such as tree structure.
 
@@ -31,14 +31,54 @@ We handle complexity in phrase level by the idea that we need to find a way to c
 An example of different usage of "and" conjunction is shown by 3 examples in figure \cite{}. In the first example, we have "and" appears between two  boolean expressions that are used for comparison. In this case, due to the translated result is boolean for each single phrase, then the final translated result of "and" will be "\&\&" operator. In the second example, we see that the translated result for the first single clause is a constructor and the type of the constructor is the type of receiver of method API in the second clause. In this case, the combineExpression() function will mix translated results of these two phrases into a single expression. The thrid example shows a different condition compared to example 2. In this case, the constructor in the first clause doesn't have the same type with neither receiver and arguments. In this case the combineExpression() function will return 2 expressions consecutively as the final translated result.  \\
 In the first 3 sections, we propose algorithms for take advantages of context in NL to PL translation and reasoning on on complex phrases, which are two per six main problems of naturalistic programming (\cite{}). In next sections, we will introduce our solution for solving four remaining problems which relate to Indirect reference: deixis, expressiveness, anaphoric relation and ambiguity.
 \subsection{Rules for translating Natural Language elements}
-In the NLPLVisitor, we provide rules for handling each NL tags. The main idea is that we identify types of tags, what children tags it produce then provide rules and its terminal value. An overview of rules and function relate to each tags is shown in table \cite{}.
+In the NLPLVisitor, we provide rules for handling each NL tags. The main idea is that we identify types of tags, what children tags it produce then provide rules and its terminal value. An overview of rules and function relate to each tags is shown in table \ref{}.
 
-\subsection{Solving IR on Noun Phrase as class name}
-\subsubsection{Identifying  class name as Noun Phrase}
-\subsubsection{Resolving types for  class name}
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+\begin{algorithm}
+	\caption{Algorithm for Translation at Clause Level}
+	\label{alg:TranslateClause}
+	\begin{algorithmic}
+		\Require \\
+		 \textit{node} - NLP node in one of types: S, 	SBAR, SBARQ, SINV, SQ	\\
+		 \textit{scope} - information about APIs and variables surround an NL description \\
+		  \textit{k} - size of return translated options
+		\Ensure $listOutput$ - list of all possible code options as translated results  
+		\Function {translateClause}{$node$}
+		\State {$\textit{listResults} \gets \textit{\{\}};$}
+		\If {  $node$ is a single clause }
+		\State {$\textit{verbNode} \gets \text{the verb inside } \textit{node};$} 
+		\State {$\textit{listTerms} \gets \text{all terms inside } \textit{node};$} 
+		\State {$\textit{listExprs} \gets \text{all expressions inside } \textit{node};$} 
+		\State {$\textit{listResults} \gets \textit{getAllRelatedAPIs(verbNode,listTerms,listExprs,k)};$}
+		\Else
+			
+		\State {$\textit{listSubClauses} \gets \text{split all clause by conjunctions } \textit{node};$} 
+		\For{$i \gets 1$ to $k$}                    
+			\State {$resultI$ $\gets$ {${\{\}}$}}
+			\ForEach {$clause \in listSubClauses $}
+			\State {$\textit{listTransI} \gets \textit{handleClause(clause)};$}
+			\State {$\textit{resultI} \gets \textit{resultI}+\textit{listTransI.get(k)};$}
+			\EndFor
+			\State {$\textit{listResults.add(resultI)};$}
+		\EndFor
+		\EndIf
+		\State {$\text{return } \textit{listResults};$}
+		\EndFunction
+	\end{algorithmic}
+\end{algorithm}
+
+\subsection{Solving IR on Noun Phrase as Class Name}
+\subsubsection{Identifying  Class Name as Noun Phrase}
+\subsubsection{Resolving Types for  Class Name}
 \subsection{Solving IR on Verb Phrase as Synonyms}
 \subsection{Solving IR on Verb Phrase as Statement Trigger}
 \subsection{Solving IR on Verb Phrase as Method Invocation}
+\subsubsection{Constructing Database of Method Invocation}
+\subsubsection{Allowing IR of Method Invocation at API levels}
+\subsubsection{Algorithm for choosing best Method APIs
+}
 \subsection{Solving IR on Preposition as Method APIs}
 
 

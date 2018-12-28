@@ -40,24 +40,27 @@
 \contentsline {subsection}{\numberline {3.2.2}NL Tree Transformation}{26}{subsection.50}
 \contentsline {subsection}{\numberline {3.2.3}Phrase: Connecting information between each Phrase in translation}{27}{subsection.51}
 \contentsline {subsection}{\numberline {3.2.4}Rules for translating Natural Language elements}{27}{subsection.52}
-\contentsline {subsection}{\numberline {3.2.5}Solving IR on Noun Phrase as class name}{28}{subsection.53}
-\contentsline {subsubsection}{\numberline {3.2.5.1}Identifying class name as Noun Phrase}{28}{subsubsection.54}
-\contentsline {subsubsection}{\numberline {3.2.5.2}Resolving types for class name}{28}{subsubsection.55}
-\contentsline {subsection}{\numberline {3.2.6}Solving IR on Verb Phrase as Synonyms}{28}{subsection.56}
-\contentsline {subsection}{\numberline {3.2.7}Solving IR on Verb Phrase as Statement Trigger}{28}{subsection.57}
-\contentsline {subsection}{\numberline {3.2.8}Solving IR on Verb Phrase as Method Invocation}{28}{subsection.58}
-\contentsline {subsection}{\numberline {3.2.9}Solving IR on Preposition as Method APIs}{28}{subsection.59}
+\contentsline {subsection}{\numberline {3.2.5}Solving IR on Noun Phrase as Class Name}{29}{subsection.54}
+\contentsline {subsubsection}{\numberline {3.2.5.1}Identifying Class Name as Noun Phrase}{29}{subsubsection.55}
+\contentsline {subsubsection}{\numberline {3.2.5.2}Resolving Types for Class Name}{29}{subsubsection.56}
+\contentsline {subsection}{\numberline {3.2.6}Solving IR on Verb Phrase as Synonyms}{29}{subsection.57}
+\contentsline {subsection}{\numberline {3.2.7}Solving IR on Verb Phrase as Statement Trigger}{29}{subsection.58}
+\contentsline {subsection}{\numberline {3.2.8}Solving IR on Verb Phrase as Method Invocation}{29}{subsection.59}
+\contentsline {subsubsection}{\numberline {3.2.8.1}Constructing Database of Method Invocation}{29}{subsubsection.60}
+\contentsline {subsubsection}{\numberline {3.2.8.2}Allowing IR of Method Invocation at API levels}{29}{subsubsection.61}
+\contentsline {subsubsection}{\numberline {3.2.8.3}Algorithm for choosing best Method APIs }{29}{subsubsection.62}
+\contentsline {subsection}{\numberline {3.2.9}Solving IR on Preposition as Method APIs}{29}{subsection.63}
 \newpage 
-\contentsline {chapter}{\numberline {4.}EXPERIMENTAL}{29}{chapter.60}
-\contentsline {section}{\numberline {4.1}Data Preparation}{29}{section.61}
-\contentsline {section}{\numberline {4.2}Experiment Result}{29}{section.62}
-\contentsline {section}{\numberline {4.3}Result Analysis}{37}{section.64}
-\contentsline {section}{\numberline {4.4}NLPL Online IDE}{37}{section.65}
-\contentsline {chapter}{\numberline {5.}SUMMARY AND DISCUSSION}{39}{chapter.66}
-\contentsline {section}{\numberline {5.1}Related Works on Syntax-based approach in translation between Natural Languages}{39}{section.67}
-\contentsline {section}{\numberline {5.2}Related Works on Inferring Implementation}{39}{section.68}
+\contentsline {chapter}{\numberline {4.}EXPERIMENTAL}{30}{chapter.64}
+\contentsline {section}{\numberline {4.1}Data Preparation}{30}{section.65}
+\contentsline {section}{\numberline {4.2}Experiment Result}{30}{section.66}
+\contentsline {section}{\numberline {4.3}Result Analysis}{38}{section.69}
+\contentsline {section}{\numberline {4.4}NLPL Online IDE}{38}{section.70}
+\contentsline {chapter}{\numberline {5.}SUMMARY AND DISCUSSION}{40}{chapter.71}
+\contentsline {section}{\numberline {5.1}Related Works on Syntax-based approach in translation between Natural Languages}{40}{section.72}
+\contentsline {section}{\numberline {5.2}Related Works on Inferring Implementation}{40}{section.73}
 \def \@chapapp {}
 \def \@chapapp {APPENDIX\ }
-\contentsline {chapter}{\numberline {A.}ADDITIONAL MATERIAL}{42}{appendix.70}
-\contentsline {chapter}{\numberline {B.}STATISTICAL RESULTS}{43}{appendix.72}
+\contentsline {chapter}{\numberline {A.}ADDITIONAL MATERIAL}{43}{appendix.75}
+\contentsline {chapter}{\numberline {B.}STATISTICAL RESULTS}{44}{appendix.77}
 \contentsfinish 
