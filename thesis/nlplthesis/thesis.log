@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  28 DEC 2018 14:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 JAN 2019 09:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,7 +846,17 @@ Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 40.
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
-) [27] [28] [29]
+
+Overfull \hbox (6.11418pt too wide) in paragraph at lines 57--58
+[] $[]$ 
+ []
+
+
+Overfull \hbox (22.84196pt too wide) in paragraph at lines 204--205
+[] $[] \OMS/cmsy/m/n/10.95   [][]$ 
+ []
+
+) [27] [28] [29] [30] [31]
 \openout2 = `Body/chapter4.aux'.
 
  (./Body/chapter4.tex
@@ -1117,7 +1127,7 @@ Overfull \hbox (49.99994pt too wide) in alignment at lines 69--109
  [] [] [] [] 
  []
 
-[30
+[32
 
 
 
@@ -1246,7 +1256,7 @@ Overfull \hbox (49.99994pt too wide) in alignment at lines 109--149
  [] [] [] [] 
  []
 
-[31]
+[33]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
@@ -1380,7 +1390,7 @@ Overfull \hbox (49.99994pt too wide) in alignment at lines 149--189
  [] [] [] [] 
  []
 
-[32] [33]
+[34] [35]
 Underfull \hbox (badness 1596) in paragraph at lines 191--191
 []|\OT1/cmr/m/n/10.95 Thread .cur-rent-Thread() .get-Thread-
  []
@@ -1457,7 +1467,7 @@ Overfull \hbox (49.99994pt too wide) in alignment at lines 189--229
  [] [] [] [] 
  []
 
-[34]
+[36]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
@@ -1495,12 +1505,12 @@ Overfull \hbox (49.99994pt too wide) in alignment at lines 229--244
  [] [] [] [] 
  []
 
-[35] [36] [37]) [38] [39]
+[37] [38] [39]) [40] [41]
 \openout2 = `Body/chapter5.aux'.
 
  (./Body/chapter5.tex
 CHAPTER\  5.
-) [40
+) [42
 
 
 
@@ -1518,7 +1528,7 @@ Underfull \hbox (badness 1735) in paragraph at lines 11--15
 1/cmtt/m/n/10.95 https : / / dictionary . cambridge . org / us /
  []
 
-[41
+[43
 
 
 
@@ -1534,12 +1544,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--77
 ering . stackexchange . com / questions / 811 /
  []
 
-)) [42]
+)) [44]
 \openout2 = `Appendix/appendix1.aux'.
 
  (./Appendix/appendix1.tex
 APPENDIX\  A.
-) [43
+) [45
 
 
 
@@ -1548,7 +1558,7 @@ APPENDIX\  A.
 
  (./Appendix/appendix2.tex
 APPENDIX\  B.
-) [44
+) [46
 
 
 
@@ -1563,7 +1573,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 17D3C1E6063557D9117AB3B98D842FE2;3712.
+(rerunfilecheck)             Checksum: A65369210E69D464170A816336581C77;3712.
 
 
 LaTeX Warning: There were undefined references.
@@ -1571,10 +1581,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 9870 strings out of 492995
- 141350 string characters out of 6132704
- 305909 words of memory out of 5000000
- 13048 multiletter control sequences out of 15000+600000
+ 9895 strings out of 492995
+ 141758 string characters out of 6132704
+ 306427 words of memory out of 5000000
+ 13064 multiletter control sequences out of 15000+600000
  9482 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,40p,1353b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1586,10 +1596,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on thesis.pdf (53 pages, 916051 bytes).
+Output written on thesis.pdf (55 pages, 926718 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
- 534 compressed objects within 6 object streams
- 133 named destinations out of 1000 (max. 500000)
+ 644 PDF objects out of 1000 (max. 8388607)
+ 549 compressed objects within 6 object streams
+ 142 named destinations out of 1000 (max. 500000)
  437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -44,21 +44,31 @@ In the NLPLVisitor, we provide rules for handling each NL tags. The main idea is
 		 \textit{node} - NLP node in one of types: S, 	SBAR, SBARQ, SINV, SQ	\\
 		 \textit{scope} - information about APIs and variables surround an NL description \\
 		  \textit{k} - size of return translated options
-		\Ensure $listOutput$ - list of all possible code options as translated results  
+		\Ensure $listResults$ - list of all possible code options as translated results  
 		\Function {translateClause}{$node$}
 		\State {$\textit{listResults} \gets \textit{\{\}};$}
+		\If {  $node$ is a sentence }
 		\If {  $node$ is a single clause }
 		\State {$\textit{verbNode} \gets \text{the verb inside } \textit{node};$} 
 		\State {$\textit{listTerms} \gets \text{all terms inside } \textit{node};$} 
 		\State {$\textit{listExprs} \gets \text{all expressions inside } \textit{node};$} 
 		\State {$\textit{listResults} \gets \textit{getAllRelatedAPIs(verbNode,listTerms,listExprs,k)};$}
-		\Else
-			
-		\State {$\textit{listSubClauses} \gets \text{split all clause by conjunctions } \textit{node};$} 
+		\Else 
+		\State {$\text{// a sentence contains multiple clauses which separated by conjunctions "and" or "or"}$}
+		\State {$\textit{listSubClauses} \gets \text{split sentence by multiple clauses } \textit{node};$} 
+		\State {$resultI$ $\gets$ {${\{\}}$}}
+		\ForEach {$clause \in listSubClauses $}
+			\State {$\textit{listAPIs} \gets \textit{getAllRelatedAPIs(clause)};$}
+		\State {$\textit{resultI} \gets \textit{resultI}+\textit{listTransI.get(k)};$}
+		\EndFor
+		\State {$\textit{listResults.add(resultI)};$}
+		\EndIf
+		\Else 
+		\State {$\textit{listSubSentences} \gets \text{split clause by multiple sentences };$} 
 		\For{$i \gets 1$ to $k$}                    
 			\State {$resultI$ $\gets$ {${\{\}}$}}
-			\ForEach {$clause \in listSubClauses $}
-			\State {$\textit{listTransI} \gets \textit{handleClause(clause)};$}
+			\ForEach {$sentence \in listSubSentences $}
+			\State {$\textit{listTransI} \gets \textit{translateClause(sentence)};$}
 			\State {$\textit{resultI} \gets \textit{resultI}+\textit{listTransI.get(k)};$}
 			\EndFor
 			\State {$\textit{listResults.add(resultI)};$}
@@ -68,6 +78,137 @@ In the NLPLVisitor, we provide rules for handling each NL tags. The main idea is
 		\EndFunction
 	\end{algorithmic}
 \end{algorithm}
+
+\begin{algorithm}
+	\caption{Algorithm for get all related method APIs from verbs and surrounding context}
+	\label{alg:GetAllMethodAPIs}
+	\begin{algorithmic}
+		\Require \\
+		\textit{verbNode} - NLP node in type VP	\\
+		\textit{listTerms} - list of nlp node as terms \\
+		\textit{listExprs} - list of nlp node as expressions \\
+		\textit{k} - size of return translated options
+		\Ensure $listResults$ - list of all possible code options as translated results  
+		\Function {getAllRelatedMethodAPIs}{$verbNode,listTerms,listExprs,k$}
+		\State{$\textit{listIdentifiers} \gets \textit{getListIdentiers(verbNode,listTerms,k)}$}
+		\State{$\textit{listMethodAPIs} \gets \textit{getBestMethodSignature(verbNode,listTerms,k) }$}
+		\State {$\text{return } \textit{listMethodAPIs};$}
+		\EndFunction
+	\end{algorithmic}
+\end{algorithm}
+
+
+\begin{algorithm}
+	\caption{Algorithm to Add Terms to Ancestor}
+	\label{alg:addTermsToAncestor}
+	\begin{algorithmic}
+		\Require \\
+		\textit{node} - NLP node in phrase levels and word levels
+	\Function {addTermsToAncestor}{$node$}
+	\State {$\textit{listTypesOfAncestor} \gets \text{S, SBAR, SBARQ, SINV, SQ,  ROOT }$} 
+	\State {$\textit{ancestor} \gets \text{node}$}
+	\While {  $\text{type of } \textit{ancestor} \text{ does not belong to } \textit{listTypesOfAncestor} $}
+	\State{$\textit{ancestor} \gets \textit{ancestor.parent};$}
+	\EndWhile	
+	\State{$\textit{ancestor.listTerms.add(node)};$}
+	\EndFunction	
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+	\caption{Algorithm to Add Verb Phrase to Ancestor}
+	\label{alg:addVerbPhraseToAncestor}
+	\begin{algorithmic}
+		\Require \\
+		\textit{node} - NLP node of type Verb Phrase
+		\Function {addVerbPhraseToAncestor}{$node$}
+		\State {$\textit{listTypesOfAncestor} \gets \text{S, SBAR, SBARQ, SINV, SQ,  ROOT }$} 
+		\State {$\textit{ancestor} \gets \textit{node}$}
+		\While {  $\text{type of } \textit{ancestor} \text{ does not belong to } \textit{listTypesOfAncestor} $}
+		\State{$\textit{ancestor} \gets \textit{ancestor.parent};$}
+		\EndWhile	
+		\State{$\textit{ancestor.verbPhrase} \gets \textit{node};$}
+		\EndFunction	
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+	\caption{Algorithm to Add Verb Content to Ancestor}
+	\label{alg:addVerbContentToAncestor}
+	\begin{algorithmic}
+		\Require \\
+		\textit{node} - NLP node of type VB, VBZ, VBD
+		\Function {addVerbContentToAncestor}{$node$}
+		\State {$\textit{ancestor} \gets \textit{node}$}
+		\While {$\text{type of } \textit{ancestor} \text{ is not VP }$}
+		\State{$\textit{ancestor} \gets \textit{ancestor.parent};$}
+		\EndWhile
+		\If {  $\textit{ancestor}$ is null }
+			\State {$\textit{listTypesOfAncestor} \gets \text{S, SBAR, SBARQ, SINV, SQ,  ROOT }$} 
+			\State {$\textit{ancestor} \gets \textit{node}$}
+			\While {$\text{type of } \textit{ancestor} \text{ does not belong to } \textit{listTypesOfAncestor} $}
+			\State{$\textit{ancestor} \gets \textit{ancestor.parent};$}
+			\EndWhile
+		\EndIf			
+		\State{$\textit{ancestor.verbPhrase} \gets \textit{node};$}
+		\EndFunction	
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+	\caption{Algorithm to Add Conjunctions to Ancestor}
+	\label{alg:addConjunctionsToAncestor}
+	\begin{algorithmic}
+  		\Require \\
+		\textit{node} - NLP node in conjunction types	
+		\Function {addConjunctionsToAncestor}{$node$}
+		\State {$\textit{listTypesOfAncestor} \gets \text{S, SBAR, SBARQ, SINV, SQ,  ROOT }$} 
+		\State {$\textit{ancestor} \gets \textit{node}$}
+		\While {  $\text{type of } \textit{ancestor} \text{ does not belong to } \textit{listTypesOfAncestor} $}
+		\State{$\textit{ancestor} \gets \textit{ancestor.parent};$}
+		\EndWhile	
+		\State{$\textit{ancestor.listConjunctions.add(node)};$}
+		\EndFunction	
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+	\caption{Algorithm to Handle PP before visit}
+	\label{alg:checkPP}
+	\begin{algorithmic}
+		\Require \\
+		\textit{node} - NLP node in PP types	
+		\Function {checkPP}{$node$}
+		\If {  $\text{node has 2 words in child nodes and they are "from console"}$ }
+			\State{$\textit{parent} \gets \textit{node.parent}$}
+			\State{$\textit{consoleAPI} \gets \text{create an Expression node for } \textit{System.in}$}
+			\State{$\text{replace } \textit{node} \text{ by }\textit{consoleAPI} \text{ as child of } \textit{parent}$}
+		\EndIf	
+		\EndFunction	
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+	\caption{Algorithm to Check Class Name And Replace Node}
+	\label{alg:checkClassName}
+	\begin{algorithmic}
+		\Require \\
+		\textit{node} - NLP node in NP type	\\
+		\textit{scope} - information inside Java project \\
+		\textit{mapClassNames} - map of class name in which keys are class name and values or list of APIs that have the same class name
+		\Function {checkCLassAPI}{$node,scope,mapClassNames$}
+		\If {  $\textit{isNodeMentionAboutCLassName(node,mapClassNames)}$ }
+		\State{$\textit{strClassName} \gets \text{textual content of } \textit{node}$}
+		\State{$\textit{listClassAPIs} \gets \textit{getAllAPIsHaveSameClassName(strClassName,mapClassNames)}$}
+		\State{$\textit{strPredictedClassAPI} \gets \textit{getMostFrequentAPIInScope(listClassAPIs,scope)}$}
+		\State{$\textit{nodeClassAPI} \gets \text{ create new node of with Class Name annotation from } \textit{strPredictedClassAPI}$}
+		\State{$\textit{parent} \gets \textit{node.parent}$}
+		\State{$\text{replace } \textit{node} \text{ by }\textit{nodeClassAPI} \text{ as child of } \textit{parent}$}
+		\EndIf	
+		\EndFunction	
+		\end{algorithmic}
+	\end{algorithm}
+
 
 \subsection{Solving IR on Noun Phrase as Class Name}
 \subsubsection{Identifying  Class Name as Noun Phrase}
