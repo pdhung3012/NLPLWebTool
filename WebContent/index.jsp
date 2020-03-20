@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 <meta content="width=device-width,initial-scale=1" name="viewport">
-	<title>Department of Computer Science - Iowa State University</title>
+	<title>double blind</title>
 	<link rel="icon" type="image/x-icon" href="/favicon.ico?v=1.4.67">
 <link href="css/base.css" rel="stylesheet">
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.css" media="all" rel="stylesheet">
@@ -52,8 +52,7 @@ h3 code{
 <div class="wd-l-Ribbon isu-red-ribbon" id="ribbon" role="banner">
 	<div class="wd-l-Ribbon-inner">
 <br/>
-<h1>NLPL</h1>
-<div class="wd-l-MastTitle-siteTitle site-title sub-title"><b>A Syntax-driven Approach for Natural Language to Programming Language Translation to Realizing Literate Programming in Java</b></div>
+<div class="wd-l-MastTitle-siteTitle site-title sub-title"><b>MethodInfoToCode: Self Learning from Incomplete Space to Complete Space of Code Representation for Inferring Code from Method Name and Context</b></div>
 
 	</div>
 </div>
@@ -68,50 +67,17 @@ h3 code{
 		<div role="navigation">
 			<ul class="wd-Navigation">
 <li class="wd-Navigation-node">
-<a class="wd-Navigation-link is-active" href="/NLPLWebTool/index.jsp">Introduction</a>
-</li>
-<li class="wd-Navigation-node">
-<a class="wd-Navigation-link" href="/NLPLWebTool/approach.jsp">Approach Overview</a>
-</li>
-<li class="wd-Navigation-node">
-<a class="wd-Navigation-link" href="/NLPLWebTool/result.jsp">Result</a>
+<a class="wd-Navigation-link is-active" href="#">Data</a>
 </li>
 
-<li class="wd-Navigation-node">
-<a class="wd-Navigation-link" href="/NLPLWebTool/tool.jsp">Using Tool</a>
-</li>
 </ul>
 		</div>
 		
 	</div>
 </div>
 <div class="wd-l-Content isu-content" id="content" role="main">
-	<div style="text-align: justify;text-justify: inter-word;" class="wd-l-Content-inner">
-	Computer Programming should be considered as art ([1]). Literate Programming (LP) [1] is a programming paradigm proposed by Donald Knuth
-	to realize this idea. LP helps developers to make the source code to be more like a literature, by the ability of 
-	integrate the explanation in natural language (NL) along with original source code. However, since its appearance in 1984, 
-	LP has not been used as a popular programming paradigm. One of the challenges is that developers need to write 
-	the corresponding source code manually for any NL parts they defined to make the program compilable. 
-	In this project, we proposed Natural Language to Programming
-	Language (NLPL) system, to reduce the effort of writing code. 
-	Our NLPL system allows developers to write explanation as code comment in NL and automatically
-	generating the respected source code following the requirements of the NL parts. The code generation is done by the NLVisitor module we developed
-	 for providing translation rules at Natural Language syntax level and alleviating indirect references problems between languages.
-	 The experiment on the set of 52 comments from the code suggestion tool AnyCode ([2]) achieves the result at 75 % in top-1 accuracy, 
-	 which outperforms this prior work (62%).      
-	<br/>
-	<br/>
-	<br/>
-	<h3>References</h3>
-	<ol>
-		<li>Donald Knuth. 1984. Literate programming. Comput. J. 27, 2 (1984), 97–111.</li>
-		<li>Gvero, T. and Kuncak, V. (2015). Synthesizing java expressions from free-form queries. 
-		In Proceedings of the 2015 ACM SIGPLAN International Conference on Object-Oriented Programming, 
-		Systems, Languages, and Applications, OOPSLA 2015, pages 416–432, New York, NY, USA. ACM.</li>
-	</ol>
 	
-	</div>
-	
+	Download all data here: <a  href="https://drive.google.com/file/d/1B1zsFPD6UGcPMbEMI_l2TkbYZsDyOvr6/view?fbclid=IwAR0OT1FdGIfdv6vR20hGSRN0WPv534nKWXmBjkxOqM96wADb1HYlCDESPbs">Download link</a>
 </div>	
 
 </div>
@@ -123,13 +89,12 @@ h3 code{
 		<div class="wd-Grid wd-Grid--fitToFill wd-Grid--noGutter">
 <div class="wd-Grid-cell wd-Grid-cell--1">
 	<div class="wd-l-PageFooter-nameplate">
-		<a class="wd-Nameplate nameplate" href="http://www.iastate.edu/"><img alt="Iowa State University" src="/img/sprite.png?v=1.4.67"/></a>
+		
 	</div>
 </div>
 <div class="wd-Grid-cell wd-Grid-cell--2">
 	<div class="wd-l-PageFooter-content">
-		<p> (515) 735-6030, <script>document.write('<a href="mailto:'+ ["hungphd", "iastate.edu"].join('@') +'">'+ ["hungphd", "iastate.edu"].join('@') +'</a>')</script><noscript>hungphd (at) iastate (dot) edu</noscript>.</p>
-		<p>Copyright &copy; 1995-2016, Iowa State University of Science and Technology. All rights reserved.</p>
+		
 	</div>
 </div>
 		</div>

@@ -17,7 +17,7 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
-import edu.iastate.cs.run.NLPLRunProject;
+//import edu.iastate.cs.run.NLPLRunProject;
 import utils.UniqueIDGenerator;
 import utils.ZipUtil;
 
@@ -94,7 +94,7 @@ public class TranslateServlet extends HttpServlet {
 					outputFolder,
 					resultFinalFile
 					};
-					NLPLRunProject.main(args);
+				//	NLPLRunProject.main(args);
 					
 				}catch(Exception ex){
 					ex.printStackTrace();
